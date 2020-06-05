@@ -20,14 +20,49 @@
         integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
     <title>welcome to the departmentment of construction enginieering</title>
     <link rel="icon" href="jad.jpg" type="image/x-icon">
+    <style>
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: #353b48;
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+            /* Add a dark-grey background on hover */
+        }
+    </style>
 </head>
 
-<body style="background-image: url(civil3.jpg); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
+<body
+    style="background-image: url(civil3.jpg); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
     <div class="container">
-
         <div class="logo">
             <a href="tel: (033) 2335-5211"><i class="fa fa-phone fa-3x" aria-hidden="true"
-                    style="color: #2ed573; "></i></a>
+                    style="color: #2ed573;"></i></a>
             <a href="mailto: alumniwebconstructionju@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"
                     style="color: #ff4757; "></i></a>
             <i class="fa fa-twitter fa-3x" aria-hidden="true" style="color: #3742fa;"></i>
@@ -39,6 +74,7 @@
         </div>
         <div class="wrapper">
             <!-- navigation -->
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></button>
             <div class="nav-bar">
                 <ul>
                     <li class="active"><a href="#top-container">HOME</a></li>
@@ -51,7 +87,7 @@
                                 aria-expanded="false" style="background: #dddddd; color: #111111;">PEOPLE</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <a class="dropdown-item" href="people.html">FACULTY</a>
-                                <a class="dropdown-item" href="staff.html">STAFF</a>
+                                <a class="dropdown-item" href="people.html">STAFF</a>
                                 <a class="dropdown-item" href="people.html">STUDENT</a>
                             </div>
                         </div>
@@ -103,7 +139,7 @@
                     <h3>
                         PUBLICATIONS
                     </h3>
-                    <p><b>Department of Construction Enginieering</b></p>
+                    <p>Department of Construction Enginieering</p>
                     <a href="Department of Construction Engineering-pages-59-67.pdf" class="btn">Read more</a>
 
                 </div>
@@ -112,7 +148,7 @@
                     <h3>
                         OUTREACH ACTITVITY
                     </h3>
-                    <p><b>Brought to you by SM & PR team</b></p>
+                    <p>Brought to you by SM & PR team</p>
                     <a href="#" class="btn">Read more</a>
                 </div>
                 <div class="box">
@@ -120,7 +156,7 @@
                     <h3>
                         NEWS & UPDATES
                     </h3>
-                    <p><b>Latest news and updates</b></p>
+                    <p>Lorem ipsum dolor sit amet.</p>
                     <a href="" class="btn">Read more</a>
                 </div>
                 <div class="box">
@@ -128,7 +164,7 @@
                     <h3>
                         HELP
                     </h3>
-                    <p><b>SM & PR,Department of Construction Engineering</b></p>
+                    <p>SM & PR,Department of Construction Engineering</p>
                     <a href="" class="btn">Read more</a>
                 </div>
             </section>
@@ -225,10 +261,10 @@
                     <div>
                         <i class="fa fa-map-marker"></i>
                         <p style="font-size: 1.2rem;"><b> Department of Construction Engineering
-                                 
+
                                 LB-8, Sector - II, Salt lake City,
                                 Kolkata - 700 098, INDIA.
-                                
+
                                 Residential:
                                 AH - 200, Sector-II, Salt Lake City,
                                 Kolkata - 700 091, INDIA.</b></p>
@@ -259,7 +295,7 @@
                                 style="color: #0984e3; border-radius: 50%;"></i></a>
                         <a href="mailto: alumniwebconstructionju@gmail.com"><i class="fa fa-envelope fa-3x"
                                 aria-hidden="true" style="color: #ff4757; "></i></a>
-                                <i class="fa fa-quora fa-3x" aria-hidden="true"  style="color: #c23616; "></i>
+                        <i class="fa fa-quora fa-3x" aria-hidden="true" style="color: #c23616; "></i>
                         <a href="tel: (033) 2335-5211"><i class="fa fa-phone fa-3x" aria-hidden="true"
                                 style="color: #2ed573; "></i></a>
 
@@ -294,6 +330,45 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 </body>
 
 </html>
