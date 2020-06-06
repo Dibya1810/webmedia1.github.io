@@ -19,59 +19,19 @@
         integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
     <title>welcome to the departmentment of construction enginieering</title>
     <link rel="icon" href="jad.jpg" type="image/x-icon">
-    <style>
-        #myBtn {
-            display: none;
-            /* Hidden by default */
-            position: fixed;
-            /* Fixed/sticky position */
-            bottom: 20px;
-            /* Place the button at the bottom of the page */
-            right: 30px;
-            /* Place the button 30px from the right */
-            z-index: 99;
-            /* Make sure it does not overlap */
-            border: none;
-            /* Remove borders */
-            outline: none;
-            /* Remove outline */
-            background-color: #353b48;
-            /* Set a background color */
-            color: white;
-            /* Text color */
-            cursor: pointer;
-            /* Add a mouse pointer on hover */
-            padding: 15px;
-            /* Some padding */
-            border-radius: 10px;
-            /* Rounded corners */
-            font-size: 18px;
-            /* Increase font size */
-        }
-
-        #myBtn:hover {
-            background-color: #555;
-            /* Add a dark-grey background on hover */
-        }
-    </style>
 </head>
 
-<body style="background-image:url(civil3.jpg); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
+<body style="background-image: url(drone.jpeg); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
     <div class="container">
         <div class="logo">
-            <a href="tel: (033) 2335-5211"><i class="fa fa-phone fa-3x" aria-hidden="true"
-                    style="color: #2ed573;"></i></a>
-            <a href="mailto: alumniwebconstructionju@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"
-                    style="color: #ff4757; "></i></a>
-            <i class="fa fa-quora fa-3x" aria-hidden="true" style="color: #c23616; "></i>
-            <a href="https://www.linkedin.com/company/department-of-construction-engineering-jadavpur-university/"><i
-                    class="fa fa-linkedin-square fa-3x" aria-hidden="true"
-                    style="color: #0984e3; border-radius: 50%;"></i></a>
-            <i class="fa fa-facebook-official fa-3x" aria-hidden="true" style="color: #192a56; "></i>
+            <i class="fa fa-phone fa-3x" aria-hidden="true" style="color: #2ed573;"></i>
+            <i class="fa fa-envelope fa-3x" aria-hidden="true" style="color: #ff4757;"></i>
+            <i class="fa fa-twitter fa-3x" aria-hidden="true" style="color: #3742fa;"></i>
+            <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color: #0984e3;"></i>
+            <i class="fa fa-facebook-official fa-3x" aria-hidden="true" style="color: #192a56;"></i>
             <img src="CN2.png" alt="">
         </div>
         <div class="wrapper">
-            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
             <!-- navigation -->
             <div class="nav-bar">
                 <ul>
@@ -82,10 +42,10 @@
                         <div class="dropdown dropdown">
                             <a  onclick="myFunction()" class="btn btn-secondary dropdown-toggle"   id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #dddddd; color: #111111;">PEOPLE</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <a class="dropdown-item" href="people.html">FACULTY</a>
+                              <a class="dropdown-item" href="faculty.html">FACULTY</a>
                               <a class="dropdown-item" href="#staff">STAFF</a>
-                              <a class="dropdown-item" href="#student">STUDNET</a>
-                              <a class="dropdown-item" href="people.html">RESEARCH ASSOCIATE</a>
+                              <a class="dropdown-item" href="student.html">STUDENT</a>
+                              <a class="dropdown-item" href="researchassociate.html">RESEARCH ASSOCIATE</a>
                             </div>
                           </div>
                 </li>
@@ -97,15 +57,15 @@
             <section id="top-container">
                 <header class="showcase">
                     <h1>
-                     <span class="text-danger">Department of</span><br><span class="text-primary"> Construction</span><br><div class="text-warning">Engineering</div> 
+                        <div class="text-danger">Department of</div><span class="text-primary"> Construction</span>
+                        <div class="text-warning">Engineering</div>
                     </h1>
-                    <br>
-                    <p>
+                    <h1 class="text-danger">
                         welcomes you all
 
-                    </p>
-                    <br><br>
-                    <a href="http://www.jaduniv.edu.in/view_department.php?deptid=83" class="btn">Read More</a>
+                    </h1>
+                    <br>
+                    <a href="#boxes" class="btn">Read More</a>
                 </header>
 
             </section>
@@ -166,45 +126,25 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
             crossorigin="anonymous"></script>
-<script>
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Close the dropdown menu if the user clicks outside of it
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
+            <script>
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+        
+                // Close the dropdown menu if the user clicks outside of it
+                window.onclick = function (event) {
+                    if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
                     }
                 }
-            }
-        }
-
-
-        mybutton = document.getElementById("myBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-    </script>
+            </script>
 </body>
 
 </html>
