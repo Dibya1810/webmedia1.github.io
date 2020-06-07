@@ -391,8 +391,9 @@ footer{
         grid-template-columns: 1fr;
     }
     .info3{
-    width:120%;
-    height:auto;}
+        width: 120%;
+        height: auto;
+    }
 }
 @media(max-width: 500px){
     body{
@@ -522,8 +523,9 @@ footer{
         visibility: hidden;
     }
     .info3{
-    width:120%;
-    height:auto;}
+        width: 120%;
+        height: 60%;
+    }
 }
 .context{
     padding: 0 100px;
