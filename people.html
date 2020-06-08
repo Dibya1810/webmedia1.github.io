@@ -22,36 +22,54 @@
 </head>
 
 <body style="background-image: url(drone.jpeg); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
-    <div class="container">
-        <div class="logo">
-            <i class="fa fa-phone fa-3x" aria-hidden="true" style="color: #2ed573;"></i>
-            <i class="fa fa-envelope fa-3x" aria-hidden="true" style="color: #ff4757;"></i>
-            <i class="fa fa-twitter fa-3x" aria-hidden="true" style="color: #3742fa;"></i>
-            <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color: #0984e3;"></i>
-            <i class="fa fa-facebook-official fa-3x" aria-hidden="true" style="color: #192a56;"></i>
-            <img src="CN2.png" alt="">
-        </div>
         <div class="wrapper">
             <!-- navigation -->
-            <div class="nav-bar">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="academics.html">ACADEMICS</a></li>
-                    <li><a href="#">RESEARCH</a></li>
-                    <li class="active">
-                        <div class="dropdown dropdown">
-                            <a  onclick="myFunction()" class="btn btn-secondary dropdown-toggle"   id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #dddddd; color: #111111;">PEOPLE</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                              <a class="dropdown-item" href="#faculty">FACULTY</a>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="CN2.png" alt="" style="width: 550px; height: auto;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acadmics.html">ACADEMICS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">RESEARCH</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              PEOPLE
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item active" href="#faculty">FACULTY<span class="sr-only">(current)</span></a>
                               <a class="dropdown-item" href="staff.html">STAFF</a>
-                              <a class="dropdown-item" href="student.html">STUDNET</a>
-                              <a class="dropdown-item" href="researchassociate.html">RESEARCH ASSOCIATE</a>
+                              <a class="dropdown-item" href="student.html">STUDENT</a>
+                              <a class="dropdown-item" href="researchassociate.html">RESEARCH ASSOCIAIE</a>
                             </div>
-                          </div>
-                </li>
-                    <li><a href="https://constructionengineeringju.github.io/">LOGIN</a></li>
-                </ul>
-            </div>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://constructionengineeringju.github.io/">LOGIN</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        
+                        <a href="https://www.facebook.com/constructionju/"> <i class="fa fa-facebook-official fa-3x"
+                            aria-hidden="true" style="color: #192a56; "></i></a>
+                            
+                        <a href="https://www.linkedin.com/company/department-of-construction-engineering-jadavpur-university/"><i
+                            class="fa fa-linkedin-square fa-3x" aria-hidden="true"
+                            style="color: #0984e3; border-radius: 50%;"></i></a>
+                        <a href="mailto: alumniwebconstructionju@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"
+                                style="color: #ff4757; "></i></a>
+                        <i class="fa fa-quora fa-3x" aria-hidden="true" style="color: #c23616; "></i>
+                    </span>
+                </div>
+            </nav>
 
             <!-- top-container -->
             <section id="top-container">
