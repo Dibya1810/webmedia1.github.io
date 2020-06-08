@@ -16,11 +16,13 @@ body{
     background:  #2d3436;
      margin: 30px 50px;
     line-height: 1.4;
-    
 }
 
 .logo{
     text-align: center;
+}
+#staff body{
+    margin-top: 150px;
 }
 .logo img{
     margin: 10px;
@@ -78,13 +80,21 @@ text-decoration: none;
     background: var(--dark);
     color: var(--primary);
 }
-
 #top-container{
     display: grid;
     grid-gap: 20px;
-    /* grid-template-areas: 
-    'showcase showcase top-box-a'
-    'showcase showcase top-box-b'; */
+    align-items: center;
+    text-align: center;
+}
+#top-container .showcase h1{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+#top-container .showcase a{
+    height: auto;
+    margin: auto;
+    display: block;
 }
 .showcase{
     grid-area: 'showcase showcase ';
@@ -194,13 +204,23 @@ text-decoration: none;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
     display: grid;
     grid-gap: 1.3rem;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 30% 70%;
     padding: 4rem;
     text-align: center;
     justify-content: center;
     width: 100%;
     height: 50%;
     margin: auto;
+}
+.info p{
+    font-size: 1.3rem;
+}
+.info li{
+    font-size: 1.3rem;
+}
+.info img{
+    width: 100%;
+    height: auto;
 }
 .info3{
     background: rgba(255,255,255,0.2);
@@ -277,7 +297,13 @@ footer{
   .logo1{
       padding: 20px;
   }
-
+  .navbar li a{
+    font-size: 1.5rem;
+    font-weight: 80%;
+}
+.navbar span i{
+    padding: 12px;
+}
 @media(max-width: 700px){
     #top-container{
         /* grid-template-areas: 
@@ -397,7 +423,18 @@ footer{
 }
 @media(max-width: 500px){
     body{
-        margin-top: -250px;
+        margin-top: 120px;
+    }
+    .navbar{
+        background: #dddddd;
+        margin-top: -100px;
+        display: block;
+    }
+    .navbar .nav-item a{
+        font-size: 1.1rem;
+    }
+    .navbar .navbar-text i{
+        font-size: 1.5rem;
     }
     #top-container{
         /* grid-template-areas: 
@@ -470,15 +507,16 @@ footer{
         grid-template-columns: 1fr;
         font-size: 0.8rem;
         color: black;
+        width: 120%;
+        height: 60%;
     }
     .info1 img{
-       
-        height: 30px;
-        width: auto;
+        width: 60px;
+        height: auto;
     }
-    .info1 img{
-        height: 50px;
-        align-items: center;
+    .info1 p{
+        font-size: 10px;
+        font-weight: lighter;
     }
     .info1 iframe{
         width: 100;
@@ -520,11 +558,18 @@ footer{
         align-items: center;
     }
     .portfolio img{
-        visibility: hidden;
+        width: 100%;
+        font-size: 1.8rem;
     }
     .info3{
-        width: 120%;
+        width: 100%;
         height: 60%;
+    }
+    .info3 h2{
+        display: none;
+    }
+    .info3 img{
+        
     }
 }
 .context{
