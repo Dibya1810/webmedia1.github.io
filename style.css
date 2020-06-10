@@ -481,16 +481,13 @@ footer{
         font-size: 1.0rem;
         text-align: center;
         margin: auto;
-        font-family: 'Chelsea Market', cursive;
     }
     .showcase p{
         font-size: 1.1rem;
         margin: auto;
-        font-family: 'Chelsea Market', cursive;
     }
     .showcase a{
         margin: auto;
-        font-family: 'Chelsea Market', cursive;
     }
     .nav-bar ul{
         grid-template-columns: 1fr;
