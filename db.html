@@ -20,8 +20,8 @@
     <title>welcome to the departmentment of construction enginieering</title>
     <link rel="icon" href="jad.jpg" type="image/x-icon">
     <style>
-        .info3 {
-            margin-top: -60px;
+        .infom {
+            margin-top: -50px;
         }
 
         table.table-bordered {
@@ -45,35 +45,62 @@
             font-weight: bold;
             padding: 10px;
         }
-
+        
+        .infom a{
+                justify-content: center;
+                align-items: center;
+                display: block;
+            }
+        @media(max-width: 700px) {
+            
+            table {
+                font-size: 0.6rem;
+            }
+        }
         @media(max-width: 500px) {
 
             /* .card-img-top {
                 width: 200;
                 height: 180;
             } */
-            .card-img-top {
+            .card{
+                word-wrap: break-word;
+            }
+            .card-img-top{
                 width: 100;
-                height: 100;
+                height: 200;
             }
-
-            .info3 {
+            .infom {
                 display: block;
+                background: none;
+                box-shadow: none;
             }
 
-            .info3 h2 {
-                font-size: 1.2rem;
+            .infom h2 {
+                font-size: 0.8rem;
                 font-weight: bold;
             }
 
             table {
-                font-size: 0.7rem;
+                font-size: 0.5rem;
+                width: 100%;
             }
-
+            .ubantu{
+                display: none;
+            }
             body {
                 background-image: none;
                 background: none;
 
+            }
+            .infom a{
+                justify-content: center;
+                align-items: center;
+                display: block;
+            }
+            .card img .card-img-top{
+                width: 100;
+                height: 200;
             }
         }
     </style>
@@ -133,18 +160,17 @@
             </div>
         </nav>
 
-        <br>
+        <br><br>
         <!-- top-container -->
 
         <!-- infosection -->
         <!-- info1 -->
         <br>
         <section id="staff">
-            <section class="info3">
-                <!-- <section class="info3"> -->
+                <section class="infom">
                 <div class="card" style="width: 100%;">
-                    <img class="card-img-top image1" src="images/total.jpeg" alt="Card image cap" width="600"
-                        height="650" style="z-index: 0;">
+                    <img class="card-img-top image1" src="images/total.jpeg" alt="Card image cap" width="400"
+                        height="450" style="z-index: 0;">
                     <img src="db.jpg" alt="db" class="avatar"
                         style="vertical-align: middle;
                     width: 250px;
@@ -164,29 +190,29 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Degree</th>
-                                    <th scope="col">Specialization</th>
+                                    <th scope="col" class="ubantu">Specialization</th>
                                     <th scope="col">Institute Name</th>
-                                    <th scope="col">Passing Year</th>
+                                    <th scope="col">Gradiation Year</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">BE</th>
-                                    <td>Civil Engineeeing</td>
+                                    <td class="ubantu">Civil Engineeeing</td>
                                     <td>JADAVPUR UNIVERSITY,KOLKATA</td>
-                                    <td>1987</td>
+                                    <td>1989</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">ME</th>
-                                    <td>Structural Enginering</td>
+                                    <td class="ubantu">Structural Enginering</td>
                                     <td>IIT Kharagpur</td>
-                                    <td>1996</td>
+                                    <td>1990</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">PhD</th>
-                                    <td>Structural Engienering</td>
-                                    <td>IIT Kharagpur</td>
-                                    <td>2009</td>
+                                    <td class="ubantu">Structural Engienering</td>
+                                    <td>Arizona State university</td>
+                                    <td>2000</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -268,14 +294,14 @@
                                     <th scope="col">Links</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody style="overflow: hidden;">
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>http://source.unsplash.com/random/1800*1800</td>
+                                    <th scope="row" style="overflow: hidden;">1</th>
+                                    <td>http://source.unsplash.com</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">2</th>
-                                    <td>http://source.unsplash.com/random/1800*1800</td>
+                                    <th scope="row" style="overflow: hidden;">2</th>
+                                    <td>http://source.unsplash.com</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -326,7 +352,7 @@
                         by SM&PR Group</a>
                 </p>
                 <p style="font-size:1.15rem"><em></em> Managed by Web Development Team, SM&PR Group</p>
-               
+                <small>copyright &copy SM & PR,Department of Construction Engineeeing</small>
             </div>
         </footer>
 
