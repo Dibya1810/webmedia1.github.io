@@ -20,61 +20,99 @@
     <title>welcome to the departmentment of construction enginieering</title>
     <link rel="icon" href="jad.jpg" type="image/x-icon">
     <style>
-        .info3 {
-            margin-top: -60px;
+         .infom {
+            margin-top: -50px;
         }
 
         table.table-bordered {
-            border: 2px solid #0984e3;
+            border: 2px solid #dfe6e9;
             /* margin-top: 20px; */
             padding: 10px;
         }
-
-        table.table-bordered>thead>tr>th {
-            border: 2px solid #0984e3;
+        table.table-bordered>thead>tr {
+            border: 2px solid #dfe6e9;
             padding: 10px;
+            text-transform: capitalize;
+            font-weight: bold;
+            padding: 10px;
+            color:#2d3436;
         }
-
         table.table-bordered>thead>tr>th {
-            border: 2px solid #0984e3;
+            border: 2px solid #dfe6e9;
+            padding: 10px;
+            text-transform: capitalize;
+            font-weight: bold;
+            padding: 10px;
+            color:#2d3436;
+        }
+        table.table-bordered>thead>tr>th {
+            border: 2px solid #dfe6e9;
             padding: 10px;
         }
 
         table.table-bordered>tbody>tr>td {
-            border: 2px solid #0984e3;
+            border: 2px solid #dfe6e9;
             text-transform: capitalize;
             font-weight: bold;
             padding: 10px;
+            color:#2d3436;
         }
-
+        
+        .infom a{
+                justify-content: center;
+                align-items: center;
+                display: block;
+            }
+        @media(max-width: 700px) {
+            
+            table {
+                font-size: 0.6rem;
+            }
+        }
         @media(max-width: 500px) {
 
             /* .card-img-top {
                 width: 200;
                 height: 180;
             } */
-            .card-img-top {
+            .card{
+                word-wrap: break-word;
+            }
+            .card-img-top{
                 width: 100;
-                height: 100;
+                height: 200;
             }
-
-            .info3 {
+            .infom {
                 display: block;
+                background: none;
+                box-shadow: none;
             }
 
-            .info3 h2 {
-                font-size: 1.2rem;
+            .infom h2 {
+                font-size: 0.8rem;
                 font-weight: bold;
             }
 
             table {
-                font-size: 0.7rem;
+                font-size: 0.5rem;
+                width: 100%;
             }
-
+            .ubantu{
+                display: none;
+            }
             body {
                 background-image: none;
                 background: none;
 
+            }
+            .infom a{
+                justify-content: center;
+                align-items: center;
+                display: block;
+            }
+            .card img .card-img-top{
+                width: 100;
+                height: 200;
             }
         }
     </style>
@@ -134,22 +172,22 @@
             </div>
         </nav>
 
-        <br>
+        <br><br>
         <!-- top-container -->
 
         <!-- infosection -->
         <!-- info1 -->
         <br>
         <section id="staff">
-            <section class="info3">
+            <section class="infom">
                 <!-- <section class="info3"> -->
                 <div class="card" style="width: 100%;">
-                    <img class="card-img-top image1" src="images/total.jpeg" alt="Card image cap" width="600"
-                        height="650" style="z-index: 0;">
+                    <img class="card-img-top image1" src="images/total.jpeg" alt="Card image cap" width="400"
+                        height="450" style="z-index: 0;">
                     <img src="kb.jpg" alt="db" class="avatar"
                         style="vertical-align: middle;
-                    width: 250px;
-                    height: 250px;
+                    width: 150px;
+                    height: 150px;
                     border-radius: 50%; margin: auto; margin-top: -100px; display: flex; z-index: 100; flex-wrap: wrap;">
                     <div class="card-body" style="background-color: rgba(255,255, 255, 0.5);">
                         <h2 class="card-title" style="text-transform: uppercase;"><b>DR. Kaushik Bandyopadhyay</b></h2>
@@ -165,7 +203,7 @@
                             <thead>
                                 <tr>
                                     <th scope="col">Degree</th>
-                                    <th scope="col">Specialization</th>
+                                    <th scope="col" class="ubantu">Specialization</th>
                                     <th scope="col">Institute Name</th>
                                     <th scope="col">Passing Year</th>
                                 </tr>
@@ -173,19 +211,19 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">BE</th>
-                                    <td>Civil Engineeeing</td>
+                                    <td class="ubantu">Civil Engineeeing</td>
                                     <td>JADAVPUR UNIVERSITY,KOLKATA</td>
                                     <td>1989</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">ME</th>
-                                    <td>Geotechnical & Geo-environmental Engg</td>
+                                    <td class="ubantu">Geotechnical & Geo-environmental Engg</td>
                                     <td>JADAVPUR UNIVERSITY,KOLKATA</td>
                                     <td>1993</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">PhD</th>
-                                    <td>Geotechnical & Geo-environmental Engg</td>
+                                    <td class="ubantu">Geotechnical & Geo-environmental Engg</td>
                                     <td>JADAVPUR UNIVERSITY,KOLKATA</td>
                                     <td>2003</td>
                                 </tr>
