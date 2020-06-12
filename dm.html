@@ -20,60 +20,114 @@
     <title>welcome to the departmentment of construction enginieering</title>
     <link rel="icon" href="jad.jpg" type="image/x-icon">
     <style>
-        .info3 {
-            margin-top: -60px;
+        .wrapper{
+            width: 60%; 
+            height: auto; 
+            margin: auto;
+        }
+        .infom {
+            margin-top: -50px;
         }
 
         table.table-bordered {
-            border: 2px solid #0984e3;
+            border: 2px solid #dfe6e9;
             /* margin-top: 20px; */
             padding: 10px;
         }
-
-        table.table-bordered>thead>tr>th {
-            border: 2px solid #0984e3;
+        table.table-bordered>thead>tr {
+            border: 2px solid #dfe6e9;
             padding: 10px;
+            text-transform: capitalize;
+            font-weight: bold;
+            padding: 10px;
+            color:#2d3436;
         }
         table.table-bordered>thead>tr>th {
-            border: 2px solid #0984e3;
+            border: 2px solid #dfe6e9;
+            padding: 10px;
+            text-transform: capitalize;
+            font-weight: bold;
+            padding: 10px;
+            color:#2d3436;
+        }
+        table.table-bordered>thead>tr>th {
+            border: 2px solid #dfe6e9;
             padding: 10px;
         }
 
         table.table-bordered>tbody>tr>td {
-            border: 2px solid #0984e3;
+            border: 2px solid #dfe6e9;
             text-transform: capitalize;
             font-weight: bold;
             padding: 10px;
+            color:#2d3436;
         }
-
+        
+        .infom a{
+                justify-content: center;
+                align-items: center;
+                display: block;
+            }
+        @media(max-width: 700px) {
+            
+            table {
+                font-size: 0.6rem;
+            }
+            .wrapper{
+            width:100%;
+            height:100%;
+            margin:auto;
+            }
+        }
         @media(max-width: 500px) {
 
             /* .card-img-top {
                 width: 200;
                 height: 180;
             } */
-            .card-img-top {
+            .wrapper{
+            width:100%;
+            height:100%;
+            margin:auto;
+            }
+            .card{
+                word-wrap: break-word;
+            }
+            .card-img-top{
                 width: 100;
-                height: 100;
+                height: 200;
             }
-
-            .info3 {
+            .infom {
                 display: block;
+                background: none;
+                box-shadow: none;
             }
 
-            .info3 h2 {
-                font-size: 1.2rem;
+            .infom h2 {
+                font-size: 0.8rem;
                 font-weight: bold;
             }
 
             table {
-                font-size: 0.7rem;
+                font-size: 0.5rem;
+                width: 100%;
             }
-
+            .ubantu{
+                display: none;
+            }
             body {
                 background-image: none;
                 background: none;
 
+            }
+            .infom a{
+                justify-content: center;
+                align-items: center;
+                display: block;
+            }
+            .card img .card-img-top{
+                width: 100;
+                height: 200;
             }
         }
     </style>
@@ -81,9 +135,7 @@
 
 <body
     style="background-image: url(drone.jpeg); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
-
-    <div class="wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#"><img src="CN2.png" alt="" style="width: 550px; height: auto;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -131,40 +183,35 @@
                     <i class="fa fa-quora fa-2x" aria-hidden="true" style="color: #c23616; "></i>
                 </span>
             </div>
-        </nav>
-
-        <br>
-        <!-- top-container -->
-
-        <!-- infosection -->
-        <!-- info1 -->
-        <br>
+                </nav>
+    
+     <br><br><br>
+    <div class="wrapper">
         <section id="staff">
-            <section class="info3">
-                <!-- <section class="info3"> -->
+                <section class="infom">
                 <div class="card" style="width: 100%;">
-                    <img class="card-img-top image1" src="images/bridgethegap1.jpg" alt="Card image cap" width="600"
-                        height="650" style="z-index: 0;">
-                    <img src="dm1.jpg" alt="db" class="avatar"
+                    <img class="card-img-top image1" src="images/bridgethegap1.jpeg" alt="Card image cap" width="400"
+                        height="400" style="z-index: 0;">
+                    <img src="dm1.jpg" alt="dm1" class="avatar"
                         style="vertical-align: middle;
-                    width: 250px;
-                    height: 250px;
+                    width: 200px;
+                    height: 200px;
                     border-radius: 50%; margin: auto; margin-top: -100px; display: flex; z-index: 100; flex-wrap: wrap;">
                     <div class="card-body" style="background-color: rgba(255,255, 255, 0.5);">
-                        <h2 class="card-title" style="text-transform: uppercase;"><b>DR.DIPESH MAJUMDAR</b></h2>
-                        <h2 class="card-title" style="text-transform: uppercase;"><b>ASSISTANT PROFESSOR</b></h2>
+                        <h2 class="card-title" style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;"><b>DR.Dipesh Majumdar</b></h2>
+                        <h2 class="card-title" style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;"><b>ASSISTANT PROFESSOR</b></h2>
 
                         <p class="card-text">
-                        <h2>Structural Enginering</h2>
+                        <h2 style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;">Structural Enginering</h2>
                         </p>
 
                         <p class="card-text">
-                        <h2><b>Education:</b></h2>
+                        <h2 style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;"><b>Education:</b></h2>
                         <table class="table table-bordered" style="border: 1px solid #0984e3;">
                             <thead>
                                 <tr>
                                     <th scope="col">Degree</th>
-                                    <th scope="col">Specialization</th>
+                                    <th scope="col" class="ubantu">Specialization</th>
                                     <th scope="col">Institute Name</th>
                                     <th scope="col">Passing Year</th>
                                 </tr>
@@ -172,28 +219,28 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">BE</th>
-                                    <td>CONSTRUCTION ENGINEERING</td>
+                                    <td class="ubantu">Construction Engineeeing</td>
                                     <td>JADAVPUR UNIVERSITY,KOLKATA</td>
-                                    <td>1998</td>
+                                    <td>2001</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">ME</th>
-                                    <td>STRUCTURAL ENGINEERING</td>
-                                    <td>JADAVPUR UNIVERSITY</td>
-                                    <td>2002</td>
+                                    <th scope="row">MCE</th>
+                                    <td class="ubantu">Structural Enginering</td>
+                                    <td>JADAVPUR UNIVERSITY,KOLKATA</td>
+                                    <td>1990</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">PhD</th>
-                                    <td>STRUCTURAL ENGINEERING</td>
-                                    <td>JADAVPUR UNIVERSITY</td>
-                                    <td>2005</td>
+                                    <td class="ubantu">Structural Engienering</td>
+                                    <td>JADAVPUR UNIVERSITY,KOLKATA</td>
+                                    <td>2000</td>
                                 </tr>
                             </tbody>
                         </table>
                         </p>
                         <!-- field of Specialization -->
                         <p class="card-text">
-                        <h2><b>Field of Specialization:</b></h2>
+                        <h2 style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;"><b>Field of Specialization:</b></h2>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -208,11 +255,11 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td>Structural Health Monitoring</td>
+                                    <td></td>
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
-                                    <td>Structural Retrofitting and Rehabilitation</td>
+                                    <td>Earthquake Engineering & Disaster Mitigation</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -220,33 +267,26 @@
                         </p>
                         <!-- experience -->
                         <p class="card-text">
-                        <h2><b>publication:</b></h2>
+                        <h2 style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;"><b>publication:</b></h2>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
+                                    <th scope="col">No.</th>
+                                    <th scope="col">PUBLICATION</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
                                     <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -260,7 +300,7 @@
 
                         <!-- Externallinks -->
                         <p class="card-text">
-                        <h2><b>External Links</b> </h2>
+                        <h2 style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;"><b>External Links</b> </h2>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -268,14 +308,14 @@
                                     <th scope="col">Links</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody style="overflow: hidden;">
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>http://source.unsplash.com/random/1800*1800</td>
+                                    <th scope="row" style="overflow: hidden;">1</th>
+                                    <td>http://source.unsplash.com</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">2</th>
-                                    <td>http://source.unsplash.com/random/1800*1800</td>
+                                    <th scope="row" style="overflow: hidden;">2</th>
+                                    <td>http://source.unsplash.com</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -286,7 +326,7 @@
 
 
                         <p class="card-text">
-                        <h2>
+                        <h2 style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;">
                             professional membership
                         </h2>
                         <table class="table table-bordered">
@@ -309,9 +349,6 @@
                         </table>
                         </p>
 
-                        <a href="#" class="btn btn-primary">Download CV
-
-                        </a>
                     </div>
                 </div>
             </section>
@@ -326,7 +363,7 @@
                         by SM&PR Group</a>
                 </p>
                 <p style="font-size:1.15rem"><em></em> Managed by Web Development Team, SM&PR Group</p>
-                
+                <small>copyright &copy SM & PR,Department of Construction Engineeeing</small>
             </div>
         </footer>
 
