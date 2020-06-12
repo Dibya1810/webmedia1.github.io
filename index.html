@@ -26,6 +26,11 @@
     <title>Welcome to the Departmentment of Construction Enginieering</title>
     <link rel="icon" href="jad.jpg" type="image/x-icon">
     <style>
+        .wrapper{
+            width: 60%; 
+            height: auto; 
+            margin: auto;
+        }
         #myBtn {
             display: none;
             /* Hidden by default */
@@ -148,7 +153,20 @@
             text-decoration: none;
             cursor: pointer;
         }
-
+        @media(max-width: 700px) {
+            .wrapper{
+            width: 100%; 
+            height: auto; 
+            margin: auto;
+        }
+        }
+        @media(max-width: 500px) {
+            .wrapper{
+            width: 100%; 
+            height: auto; 
+            margin: auto;
+        }
+        }
         /* 100% Image Width on Smaller Screens */
         @media only screen and (max-width: 700px) {
             .modal-content {
@@ -213,7 +231,7 @@
         </nav>
 
         <!-- top-container -->
-    <div class="wrapper" style="width:80%;height:auto;margin:auto;">
+    <div class="wrapper">
         <!-- navigation -->
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"
                 aria-hidden="true"></i></button>
