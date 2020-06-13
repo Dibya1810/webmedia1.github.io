@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="particles.json">
     <link rel="stylesheet" href="particle.js">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Monoton&display=swap" rel="stylesheet">
@@ -25,6 +25,12 @@
     <title>welcome to the departmentment of construction enginieering</title>
     <link rel="icon" href="jad.jpg" type="image/x-icon">
     <style>
+        .wrapper {
+            width: 80%;
+            height: auto;
+            margin: auto;
+        }
+
         table.table-bordered {
             border: 2px solid #f9fbe7;
             /* margin-top: 20px; */
@@ -38,13 +44,48 @@
             border: 2px solid #f9fbe7;
             text-transform: capitalize;
             font-weight: bold;
-            color:#a7ffeb;
+            color: #a7ffeb;
         }
-        @media(max-width: 500px){
-            .info3{
-            background: none;
-            box-shadow: none;
+
+        @media(max-width: 700px) {
+            .wrapper {
+                width: 100%;
             }
+            .info3{
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+            .showcase{
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+        }
+
+        @media(max-width: 500px) {
+            /* .info3 {
+                background: none;
+                box-shadow: none;
+            } */
+
+            .info3 h2 {
+                font-size: 2.1rem;
+            }
+            
+            .info3{
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+            .wrapper {
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+            table.table-bordered>tbody>tr>td {
+            font-size: 0.5rem;
+        }
         }
     </style>
 </head>
@@ -52,59 +93,64 @@
 <body
     style="background-image: url(drone.jpeg); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
 
-        <div class="wrapper">
-            <!-- navigation -->
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#"><img src="CN2.png" alt="" style="width: 550px; height: auto;"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="acadmics.html">ACADEMICS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">RESEARCH</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              PEOPLE
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <a class="dropdown-item" href="people.html">FACULTY</a>
-                              <a class="dropdown-item" href="staff.html">STAFF</a>
-                              <a class="dropdown-item" href="student.html">STUDENT</a>
-                              <a class="dropdown-item" href="researchassociate.html">RESEARCH ASSOCIAIE</a>
-                            </div>
-                          </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://constructionengineeringju.github.io/">LOGIN</a>
-                        </li>
-                    </ul>
-                    <span class="navbar-text">
-                        
-                        <a href="https://www.facebook.com/constructionju/"> <i class="fa fa-facebook-official fa-2x"
-                            aria-hidden="true" style="color: #192a56; "></i></a>
-                            
-                        <a href="https://www.linkedin.com/company/department-of-construction-engineering-jadavpur-university/"><i
-                            class="fa fa-linkedin-square fa-2x" aria-hidden="true"
-                            style="color: #0984e3; border-radius: 50%;"></i></a>
-                        <a href="mailto: alumniwebconstructionju@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"
-                                style="color: #ff4757; "></i></a>
-                        <i class="fa fa-quora fa-2x" aria-hidden="true" style="color: #c23616; "></i>
-                    </span>
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="CN2.png" alt="" style="width: 550px; height: auto;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="acadmics.html">ACADEMICS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">RESEARCH</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PEOPLE
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="people.html">FACULTY</a>
+                        <a class="dropdown-item" href="staff.html">STAFF</a>
+                        <a class="dropdown-item" href="student.html">STUDENT</a>
+                        <a class="dropdown-item" href="researchassociate.html">RESEARCH ASSOCIAIE</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://constructionengineeringju.github.io/">LOGIN</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
 
-            <!-- top-container -->
-            <section id="top-container">
-                <header class="showcase">
-                    <h1 style="font-family: 'Bangers', cursive;
+                <a href="https://www.facebook.com/constructionju/"> <i class="fa fa-facebook-official fa-2x"
+                        aria-hidden="true" style="color: #192a56; "></i></a>
+
+                <a href="https://www.linkedin.com/company/department-of-construction-engineering-jadavpur-university/"><i
+                        class="fa fa-linkedin-square fa-2x" aria-hidden="true"
+                        style="color: #0984e3; border-radius: 50%;"></i></a>
+                <a href="mailto: alumniwebconstructionju@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"
+                        style="color: #ff4757; "></i></a>
+                <i class="fa fa-quora fa-2x" aria-hidden="true" style="color: #c23616; "></i>
+            </span>
+        </div>
+    </nav>
+
+
+
+    <div class="wrapper">
+        <!-- navigation -->
+
+
+        <!-- top-container -->
+        <section id="top-container">
+            <header class="showcase">
+                <h1 style="font-family: 'Bangers', cursive;
                 font-family: 'Monoton', cursive; color: #ffebee;">
                     <div class="text-danger">Department of</div><span style="color: #c0ca33;"> Construction</span>
                     <div style="color: #ffb300;">Engineering</div>
@@ -116,1066 +162,1237 @@
                 </h1>
                 <br>
                 <a href="#boxes" class="btn">Read More</a>
-                </header>
+            </header>
 
+        </section>
+        <!-- infosection -->
+        <!-- button -->
+        <br><br>
+        <!-- info1 -->
+        <section id="student">
+            <sectionn class="info3" style="background: none; box-shadow: none;">
+                <h2 style="color:#ffc400;font-family: 'Bitter', serif;">BACHELOR OF CONSTRUCTION ENGINEERING(BE)</h2>
             </section>
-            <!-- infosection -->
-            <!-- info1 -->
-            <br><br>
-            <section id="student">
-                <section class="info3">
-                    <h2 style="color:#ffc400;font-family: 'Bitter', serif;">BACHELOR OF CONSTRUCTION ENGINEERING(BE)</h2>
-                    <div>
-                        <h2 style="color:#ff6e40;">
-                            FIRST YEAR
-                        </h2>
-                        <table class="table table-bordered">
-                            <thead>
-                                <th style="color:#004d40;">NAME </th>
-                                <th style="color:#004d40;">ENROLLMENT NUMBER</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>MD SAHIL ALI</td>
-                                    <td>001910601004</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SOURAV SARKAR</td>
-                                    <td>001910601010</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SIMON ORAON</td>
-                                    <td>001910601014</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>MD SHOAIB MAHFUZ</td>
-                                    <td>001910601029</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SUDIPTA HALDER</td>
-                                    <td>001910601033</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>NEHA BARUA</td>
-                                    <td>001910601035</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ROHIT DAS</td>
-                                    <td>001910601036</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SUVRANIL MITRA</td>
-                                    <td>001910601039</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ANANYA BISWAS</td>
-                                    <td>001910601040</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SOUVIK NAMATA</td>
-                                    <td>001910601041</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ANAHITA DAS</td>
-                                    <td>001910601042</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>GOURAV SAHA</td>
-                                    <td>001910601043</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>RISHAV SUR</td>
-                                    <td>001910601046</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>DEBABRATA GARAI</td>
-                                    <td>001910601047</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>KRISHNA KUMAR</td>
-                                    <td>001910601048</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SURAJ KUMAR</td>
-                                    <td>001910601049</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>MOHAN KUMAR AGARWAL</td>
-                                    <td>001910601050</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SAYANDEEP MAITY</td>
-                                    <td>001910601051</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>DIPTA SURJYA NEOGI</td>
-                                    <td>001910601052</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>UTTARAYAN ROY</td>
-                                    <td>001910601053</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>UJJWAL JHA</td>
-                                    <td>001910601054</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SHREYAN GANGULY</td>
-                                    <td>001910601056</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>RITAM SADHU</td>
-                                    <td>001910601057</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>EESHAN PAUL</td>
-                                    <td>001910601059</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SATWIK BANERJEE</td>
-                                    <td>001910601060</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SAYAN MONDAL</td>
-                                    <td>001910601061</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SWAPNIL GHATAK</td>
-                                    <td>001910601062</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SUBHAJIT MALICK</td>
-                                    <td>001910601063</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>DIBYA JYOTI BASU</td>
-                                    <td>001910601064</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>MAINAK BASU</td>
-                                    <td>001910601065</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ARITRO ROY MITRA</td>
-                                    <td>001910601067</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SOUMYADEEP SINHA</td>
-                                    <td>001910601068</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SOUMIK MAJI</td>
-                                    <td>001910601069</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>AYANDEEP KAR</td>
-                                    <td>001910601070</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SK UPAHAR ALI</td>
-                                    <td>001810601071</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>DIPTA MAJUMDAR</td>
-                                    <td>001810601072</td>
-                                </tr>
-                            </tbody>
+            <section class="info3">
+                <div>
+                    <h2 style="color:#ff6e40;">
+                        FIRST YEAR
+                    </h2>
+                    <table class="table table-bordered">
+                        <thead>
+                            <th style="color:#004d40;">NAME </th>
+                            <th style="color:#004d40;">ENROLLMENT NUMBER</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MD SAHIL ALI</td>
+                                <td>001910601004</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SOURAV SARKAR</td>
+                                <td>001910601010</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SIMON ORAON</td>
+                                <td>001910601014</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MD SHOAIB MAHFUZ</td>
+                                <td>001910601029</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUDIPTA HALDER</td>
+                                <td>001910601033</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>NEHA BARUA</td>
+                                <td>001910601035</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ROHIT DAS</td>
+                                <td>001910601036</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUVRANIL MITRA</td>
+                                <td>001910601039</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ANANYA BISWAS</td>
+                                <td>001910601040</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SOUVIK NAMATA</td>
+                                <td>001910601041</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ANAHITA DAS</td>
+                                <td>001910601042</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>GOURAV SAHA</td>
+                                <td>001910601043</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>RISHAV SUR</td>
+                                <td>001910601046</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>DEBABRATA GARAI</td>
+                                <td>001910601047</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>KRISHNA KUMAR</td>
+                                <td>001910601048</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SURAJ KUMAR</td>
+                                <td>001910601049</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MOHAN KUMAR AGARWAL</td>
+                                <td>001910601050</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SAYANDEEP MAITY</td>
+                                <td>001910601051</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>DIPTA SURJYA NEOGI</td>
+                                <td>001910601052</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>UTTARAYAN ROY</td>
+                                <td>001910601053</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>UJJWAL JHA</td>
+                                <td>001910601054</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SHREYAN GANGULY</td>
+                                <td>001910601056</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>RITAM SADHU</td>
+                                <td>001910601057</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>EESHAN PAUL</td>
+                                <td>001910601059</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SATWIK BANERJEE</td>
+                                <td>001910601060</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SAYAN MONDAL</td>
+                                <td>001910601061</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SWAPNIL GHATAK</td>
+                                <td>001910601062</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUBHAJIT MALICK</td>
+                                <td>001910601063</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>DIBYA JYOTI BASU</td>
+                                <td>001910601064</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MAINAK BASU</td>
+                                <td>001910601065</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ARITRO ROY MITRA</td>
+                                <td>001910601067</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SOUMYADEEP SINHA</td>
+                                <td>001910601068</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SOUMIK MAJI</td>
+                                <td>001910601069</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>AYANDEEP KAR</td>
+                                <td>001910601070</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SK UPAHAR ALI</td>
+                                <td>001810601071</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>DIPTA MAJUMDAR</td>
+                                <td>001810601072</td>
+                            </tr>
+                        </tbody>
 
-                        </table>
-                    </div>
-                </section>
-                <br>
-                <section class="info3">
-                    <div>
-                        <h2 style="color:#ff6e40 ;">
-                            SECOND YEAR
-                            </h2>
-                        <br>
-                        <table class="table table-bordered">
-                            <thead>
-                                <th style="color:#004d40;">NAME </th>
-                                <th style="color:#004d40;">ENROLLMENT NUMBER</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>BIKRAM GOSWAMI</td>
-                                    <td>001810601005</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>BIKRAM MONDAL</td>
-                                    <td>001810601009</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>NEELADRI NASKAR</td>
-                                    <td>001810601015</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ANIRUDDHA SINHA</td>
-                                    <td>001810601018</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ANUBHAV ROY</td>
-                                    <td>001810601022</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SNEHA BARAIK</td>
-                                    <td>001810601032</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ANKIT KUMAR</td>
-                                    <td>001810601036</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>GEETAM SAHA</td>
-                                    <td>001810601043</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ARPIT KUMAR</td>
-                                    <td>001810601044</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>MD SADIKUL ISLAM</td>
-                                    <td>001810601050</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>KAUSHIK SARKAR</td>
-                                    <td>001810601054</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SWARNADIP SEN</td>
-                                    <td>001810601055</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>DIPANJAN TRIPATHI</td>
-                                    <td>001810601057</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SUTANU SUI</td>
-                                    <td>001810601058</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>MONIMOY MAITY</td>
-                                    <td>0018106010062</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>NILANJAN DAS</td>
-                                    <td>001810601063</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>PUSPENDU MONDAL</td>
-                                    <td>001810601064</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>MS AFSAR MAHMOOD</td>
-                                    <td>001810601068</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>AMLESH KUMAR</td>
-                                    <td>001810601070</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>MOHD SAIM BIN KHALIL</td>
-                                    <td>001810601072</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>ARPITA RAY</td>
-                                    <td>001810601074</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>ABHIJEET KUMAR ACHARYA</td>
-                                    <td>001810601075</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>RITESH RAUSHAN</td>
-                                    <td>001810601080</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>AMIT KUMAR YADAV</td>
-                                    <td>001810601081</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>ADITYA ROY</td>
-                                    <td>001810601082</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>SWATILEKHA ROY</td>
-                                    <td>001810601083</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>SUBHAM BISWAS</td>
-                                    <td>001810601084</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>HEMAL MURMU</td>
-                                    <td>101710601066</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>POULAMI DUTTA BANIK</td>
-                                    <td>3019106001</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>TANMOY DAS</td>
-                                    <td>3019106002</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>ANIK DAS</td>
-                                    <td>3019106004</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>AVIJIT MONDAL</td>
-                                    <td>3019106005</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>ROHIT PAUL</td>
-                                    <td>3019106006</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>SK RAJJAK HOSSAIN</td>
-                                    <td>3019106007</td>
-                                </tr>
-                            </tbody>
-
-                        </table>
-                    </div>
-                </section>
-                <br>
-                <section class="info3">
-                    <div>
-                        <h2 style="color:#ff6e40 ;">
-                           THIRD YEAR
-                        </h2>
-
-                        <table class="table table-bordered">
-                            <thead>
-                                <th style="color:#004d40;">NAME </th>
-                                <th style="color:#004d40;">ENROLLMENT NUMBER</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>GIRDHARI KUMAR</td>
-                                    <td>001710601001</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SHUBHAM RAY</td>
-                                    <td>001710601005</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>KAUSTAV GHOSAL</td>
-                                    <td>001710601009</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SUDIPTAO MISTRI</td>
-                                    <td>001710601013</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SK ALAMIN</td>
-                                    <td>001710601029</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SAHISNU MAHARA</td>
-                                    <td>001710601035</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SUMAN SAURABH</td>
-                                    <td>001710601040</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>RANJAN PRAKASH</td>
-                                    <td>001710601041</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>NISHANT RATHORE</td>
-                                    <td>001710601042</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>MANISH VAIBH</td>
-                                    <td>001710601043</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>GAURAV KUMAR</td>
-                                    <td>001710601044</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ARYAVEER KUMAR</td>
-                                    <td>001710601045</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SAMRAT MUKHERJEE</td>
-                                    <td>001710601046</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>GAURAV KUMAR</td>
-                                    <td>001710601047</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>AMAR KUMAR</td>
-                                    <td>001710601050</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ABHIJEET KUMAR</td>
-                                    <td>001710601051</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>NEERAJ KUMAR</td>
-                                    <td>001710601052</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ABHINAV KUMAR</td>
-                                    <td>001710601053</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SHIVAM ANAND</td>
-                                    <td>001710601055</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>NIDI KUMARI</td>
-                                    <td>001710601056</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SUKHENDU TELI</td>
-                                    <td>001710601058</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SAMIR KUMAR</td>
-                                    <td>001710601059</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>TANNY ROY</td>
-                                    <td>001710601060</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>ARITRA MAJUMDAR</td>
-                                    <td>001710601061</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>AVISHEK SARKAR</td>
-                                    <td>001710601062</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>TUHIN BAR</td>
-                                    <td>001710601064</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>PANKAJ LEPCHA</td>
-                                    <td>001710601065</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>WANGCHU LAMA</td>
-                                    <td>001710601066</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>SUBHADITYA MITRA</td>
-                                    <td>0016106047</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>MD REJWAN IMTIAZ</td>
-                                    <td>301810601001</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>TAMOJIT SAMANTA</td>
-                                    <td>301810601002</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>DIPANKAR GORAI</td>
-                                    <td>301810601003</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>AVIK SEN</td>
-                                    <td>301810601004</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>SAYAN PRAMANIK</td>
-                                    <td>001710601005</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>HAPPY SARKAR</td>
-                                    <td>001710601006</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>DHRUBOJYOTI GHOSH</td>
-                                    <td>001710601007</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>SUPRATIK BARMAN</td>
-                                    <td>001710601008</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>AMIT ADHIKARY</td>
-                                    <td>001710601009</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>SUBHAM KUMAR</td>
-                                    <td>001710601010</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>SUPRAKASH KALA</td>
-                                    <td>001710601011</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>SOURAV KUMAR CHATTERJEE</td>
-                                    <td>001710601012</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>ASISH SAHA</td>
-                                    <td>001710601013</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>SHAMIK DUTTA</td>
-                                    <td>001710601014</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>KUNAL PRAMANIK</td>
-                                    <td>401710601004</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-
-                        </p>
-                    </div>
-                </section>
-            <br>
-                <section class="info3">
-                    <div>
-                        <h2 style="color:#ff6e40;">
-                        FOURTH YEAR  
-                        </h2>
-                        <br><br>
-
-                        <table class="table table-bordered">
-                            <thead>
-                                <th style="color:#004d40;">NAME </th>
-                                <th style="color:#004d40;">ENROLLMENT NUMBER</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>BIJON KUMAR SARKAR</td>
-                                    <td>1610601002</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>GOUTAM ROY</td>
-                                    <td>1610601015</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SUBHAJEET SIKDAR</td>
-                                    <td>1610601017</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>TRISHITA KALSA</td>
-                                    <td>1610601018</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>MD RAJ</td>
-                                    <td>1610601030</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>BIKASH BARMAN</td>
-                                    <td>1610601031</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ANKAN MONDAL</td>
-                                    <td>1610601036</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>BODHISATYA MAZUMDAR</td>
-                                    <td>1610601037</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SUBHAJIT DAS</td>
-                                    <td>1610601038</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>INDRANIL MONDAL</td>
-                                    <td>1610601039</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SUBHAJIT MONDAL</td>
-                                    <td>1610601040</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>MANOJ MAHATO</td>
-                                    <td>1610601042</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ROHIT KUMAR</td>
-                                    <td>1610601043</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SHARIK</td>
-                                    <td>1610601044</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SUMIT KUMAR</td>
-                                    <td>1610601045</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>VISHNU PRATAP SINGH</td>
-                                    <td>1610601046</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SOUMIK PAL</td>
-                                    <td>1610601048</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SUMIT KUMAR PANDIT</td>
-                                    <td>1610601051</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SOMAK BHATTACHARYYA</td>
-                                    <td>1610601053</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>KUMAR SOURAV</td>
-                                    <td>1610601054</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>MD TAUSIF ANSARI</td>
-                                    <td>1610601056</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ANKIT ANAND</td>
-                                    <td>1610601057</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>KRITTIKA TANEJA</td>
-                                    <td>1610601058</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ABHIJIT MOHANTY</td>
-                                    <td>1610601059</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SASWATA CHATTOPADHYAY</td>
-                                    <td>1610601060</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>KUNAL OJHA</td>
-                                    <td>1610601061</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>MD GULZAR ALI</td>
-                                    <td>1610601062</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SHUBHAM KUMAR</td>
-                                    <td>1610601063</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>BITTU KUMAR</td>
-                                    <td>1610601064</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>PRITAM BANERJEE</td>
-                                    <td>1610601065</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ADITYA KUMAR</td>
-                                    <td>1610601066</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SRINJOY GUPTA</td>
-                                    <td>1610601067</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>SHIVAM SHANDILYA</td>
-                                    <td>1610601068</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>MANISH KUMAR VIVEK</td>
-                                    <td>1610601069</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>DEBAJIT SAU</td>
-                                    <td>1610601070</td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr>
-                                    <td>ANIRUDDHA CHAKROBORTY</td>
-                                    <td>1610601071</td>
-                                </tr>
-                            </tbody>
-
-                        </table>
-
-
-                        </p>
-                        <br><br>
-                    </div>
-                </section>
-
-    <br>
-        <section class="info3">
-                    <h2 style="color:#ffc400;font-family: 'Bitter', serif;">MASTER OF CONSTRUCTION ENGINEERING(ME)</h2>
-                    <div>
-                        <h2 style="color:#ff6e40;">
-                            SECOND YEAR
-                        </h2>
-                        <table class="table table-bordered">
-                            <thead>
-                                <th style:"color:#004d40;">NAME </th>
-                                <th style:"color:#004d40;">ENROLLMENT NUMBER</th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>ARPAN SAHA</td>
-                                    <td>001810602001</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>CHANDAN SARKAR</td>
-                                    <td>001810602016</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>SUTAPA BAIDYA</td>
-                                    <td>001810602015</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>MAFIJUL MOLLA</td>
-                                    <td>001810602018</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>GOUTAM SASMAL</td>
-                                    <td>001810602017</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>SOURAV PAUL</td>
-                                    <td>001810602003</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>AMINUR ISLAM</td>
-                                    <td>001810602002</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>DEVJIT ACHARJEE</td>
-                                    <td>001810602013</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>SURJIT BISWAS</td>
-                                    <td>001810602010</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>SWATI GHOSH</td>
-                                    <td>001810602009</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>DIPANJAN MANI</td>
-                                    <td>001810602006</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>ARITRA BAGCHI</td>
-                                    <td>001810602007</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>PROSUN CHOWDHURY</td>
-                                    <td>001810602004</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>DIPSUNDAR BISWAS</td>
-                                    <td>001810602005</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>RABI SANKAR ROY</td>
-                                    <td>001810602018</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>KISHOR BISWAS</td>
-                                    <td>001810602008</td>
-                                </tr>
-                            </tbody><tbody>
-                                <tr>
-                                    <td>ANUPAM ALOK</td>
-                                    <td>001810602011</td>
-                                </tr>
-                            </tbody>
-                            </section>
-                            </section>
-            <br>
-            <!-- footer -->
-           <!-- <footer id="sticky-footer" class="py-4 bg-dark text-white-50"
-                style="margin-top:5%;position: relative; width:100%;z-index: 1;">
-                <div class="container text-center">
-                    <p style="font-size:1.85rem"><a href="" style="text-decoration: none; text-emphasis: none;">Brought
-                            to
-                            you
-                            by SM&PR Group</a>
-                    </p>
-                    <p style="font-size:1.15rem"><em></em> Managed by Web Development Team, SM&PR Group</p>
+                    </table>
                 </div>
-            </footer> --!>
+            </section>
+            <br>
+            <section class="info3">
+                <div>
+                    <h2 style="color:#ff6e40 ;">
+                        SECOND YEAR
+                    </h2>
+                    <br>
+                    <table class="table table-bordered">
+                        <thead>
+                            <th style="color:#004d40;">NAME </th>
+                            <th style="color:#004d40;">ENROLLMENT NUMBER</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>BIKRAM GOSWAMI</td>
+                                <td>001810601005</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>BIKRAM MONDAL</td>
+                                <td>001810601009</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>NEELADRI NASKAR</td>
+                                <td>001810601015</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ANIRUDDHA SINHA</td>
+                                <td>001810601018</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ANUBHAV ROY</td>
+                                <td>001810601022</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SNEHA BARAIK</td>
+                                <td>001810601032</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ANKIT KUMAR</td>
+                                <td>001810601036</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>GEETAM SAHA</td>
+                                <td>001810601043</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ARPIT KUMAR</td>
+                                <td>001810601044</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MD SADIKUL ISLAM</td>
+                                <td>001810601050</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>KAUSHIK SARKAR</td>
+                                <td>001810601054</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SWARNADIP SEN</td>
+                                <td>001810601055</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>DIPANJAN TRIPATHI</td>
+                                <td>001810601057</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUTANU SUI</td>
+                                <td>001810601058</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MONIMOY MAITY</td>
+                                <td>0018106010062</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>NILANJAN DAS</td>
+                                <td>001810601063</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>PUSPENDU MONDAL</td>
+                                <td>001810601064</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MS AFSAR MAHMOOD</td>
+                                <td>001810601068</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>AMLESH KUMAR</td>
+                                <td>001810601070</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MOHD SAIM BIN KHALIL</td>
+                                <td>001810601072</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ARPITA RAY</td>
+                                <td>001810601074</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ABHIJEET KUMAR ACHARYA</td>
+                                <td>001810601075</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>RITESH RAUSHAN</td>
+                                <td>001810601080</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>AMIT KUMAR YADAV</td>
+                                <td>001810601081</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ADITYA ROY</td>
+                                <td>001810601082</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SWATILEKHA ROY</td>
+                                <td>001810601083</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUBHAM BISWAS</td>
+                                <td>001810601084</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>HEMAL MURMU</td>
+                                <td>101710601066</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>POULAMI DUTTA BANIK</td>
+                                <td>3019106001</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>TANMOY DAS</td>
+                                <td>3019106002</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ANIK DAS</td>
+                                <td>3019106004</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>AVIJIT MONDAL</td>
+                                <td>3019106005</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ROHIT PAUL</td>
+                                <td>3019106006</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SK RAJJAK HOSSAIN</td>
+                                <td>3019106007</td>
+                            </tr>
+                        </tbody>
 
-        </div>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    </table>
+                </div>
+            </section>
+            <br>
+            <section class="info3">
+                <div>
+                    <h2 style="color:#ff6e40 ;">
+                        THIRD YEAR
+                    </h2>
 
+                    <table class="table table-bordered">
+                        <thead>
+                            <th style="color:#004d40;">NAME </th>
+                            <th style="color:#004d40;">ENROLLMENT NUMBER</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>GIRDHARI KUMAR</td>
+                                <td>001710601001</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SHUBHAM RAY</td>
+                                <td>001710601005</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>KAUSTAV GHOSAL</td>
+                                <td>001710601009</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUDIPTAO MISTRI</td>
+                                <td>001710601013</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SK ALAMIN</td>
+                                <td>001710601029</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SAHISNU MAHARA</td>
+                                <td>001710601035</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUMAN SAURABH</td>
+                                <td>001710601040</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>RANJAN PRAKASH</td>
+                                <td>001710601041</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>NISHANT RATHORE</td>
+                                <td>001710601042</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MANISH VAIBH</td>
+                                <td>001710601043</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>GAURAV KUMAR</td>
+                                <td>001710601044</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ARYAVEER KUMAR</td>
+                                <td>001710601045</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SAMRAT MUKHERJEE</td>
+                                <td>001710601046</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>GAURAV KUMAR</td>
+                                <td>001710601047</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>AMAR KUMAR</td>
+                                <td>001710601050</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ABHIJEET KUMAR</td>
+                                <td>001710601051</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>NEERAJ KUMAR</td>
+                                <td>001710601052</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ABHINAV KUMAR</td>
+                                <td>001710601053</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SHIVAM ANAND</td>
+                                <td>001710601055</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>NIDI KUMARI</td>
+                                <td>001710601056</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUKHENDU TELI</td>
+                                <td>001710601058</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SAMIR KUMAR</td>
+                                <td>001710601059</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>TANNY ROY</td>
+                                <td>001710601060</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ARITRA MAJUMDAR</td>
+                                <td>001710601061</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>AVISHEK SARKAR</td>
+                                <td>001710601062</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>TUHIN BAR</td>
+                                <td>001710601064</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>PANKAJ LEPCHA</td>
+                                <td>001710601065</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>WANGCHU LAMA</td>
+                                <td>001710601066</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUBHADITYA MITRA</td>
+                                <td>0016106047</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MD REJWAN IMTIAZ</td>
+                                <td>301810601001</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>TAMOJIT SAMANTA</td>
+                                <td>301810601002</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>DIPANKAR GORAI</td>
+                                <td>301810601003</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>AVIK SEN</td>
+                                <td>301810601004</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SAYAN PRAMANIK</td>
+                                <td>001710601005</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>HAPPY SARKAR</td>
+                                <td>001710601006</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>DHRUBOJYOTI GHOSH</td>
+                                <td>001710601007</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUPRATIK BARMAN</td>
+                                <td>001710601008</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>AMIT ADHIKARY</td>
+                                <td>001710601009</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUBHAM KUMAR</td>
+                                <td>001710601010</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUPRAKASH KALA</td>
+                                <td>001710601011</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SOURAV KUMAR CHATTERJEE</td>
+                                <td>001710601012</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ASISH SAHA</td>
+                                <td>001710601013</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SHAMIK DUTTA</td>
+                                <td>001710601014</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>KUNAL PRAMANIK</td>
+                                <td>401710601004</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    </p>
+                </div>
+            </section>
+            <br><br>
+            <section class="info3">
+                <div>
+                    <h2 style="color:#ff6e40;">
+                        FOURTH YEAR
+                    </h2>
+                    <br><br>
+                    <table class="table table-bordered">
+                        <thead>
+                            <th style="color:#004d40;">NAME </th>
+                            <th style="color:#004d40;">ENROLLMENT NUMBER</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>BIJON KUMAR SARKAR</td>
+                                <td>1610601002</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>GOUTAM ROY</td>
+                                <td>1610601015</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUBHAJEET SIKDAR</td>
+                                <td>1610601017</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>TRISHITA KALSA</td>
+                                <td>1610601018</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MD RAJ</td>
+                                <td>1610601030</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>BIKASH BARMAN</td>
+                                <td>1610601031</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ANKAN MONDAL</td>
+                                <td>1610601036</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>BODHISATYA MAZUMDAR</td>
+                                <td>1610601037</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUBHAJIT DAS</td>
+                                <td>1610601038</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>INDRANIL MONDAL</td>
+                                <td>1610601039</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUBHAJIT MONDAL</td>
+                                <td>1610601040</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MANOJ MAHATO</td>
+                                <td>1610601042</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ROHIT KUMAR</td>
+                                <td>1610601043</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SHARIK</td>
+                                <td>1610601044</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUMIT KUMAR</td>
+                                <td>1610601045</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>VISHNU PRATAP SINGH</td>
+                                <td>1610601046</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SOUMIK PAL</td>
+                                <td>1610601048</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUMIT KUMAR PANDIT</td>
+                                <td>1610601051</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SOMAK BHATTACHARYYA</td>
+                                <td>1610601053</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>KUMAR SOURAV</td>
+                                <td>1610601054</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MD TAUSIF ANSARI</td>
+                                <td>1610601056</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ANKIT ANAND</td>
+                                <td>1610601057</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>KRITTIKA TANEJA</td>
+                                <td>1610601058</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ABHIJIT MOHANTY</td>
+                                <td>1610601059</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SASWATA CHATTOPADHYAY</td>
+                                <td>1610601060</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>KUNAL OJHA</td>
+                                <td>1610601061</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MD GULZAR ALI</td>
+                                <td>1610601062</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SHUBHAM KUMAR</td>
+                                <td>1610601063</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>BITTU KUMAR</td>
+                                <td>1610601064</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>PRITAM BANERJEE</td>
+                                <td>1610601065</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ADITYA KUMAR</td>
+                                <td>1610601066</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SRINJOY GUPTA</td>
+                                <td>1610601067</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SHIVAM SHANDILYA</td>
+                                <td>1610601068</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MANISH KUMAR VIVEK</td>
+                                <td>1610601069</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>DEBAJIT SAU</td>
+                                <td>1610601070</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ANIRUDDHA CHAKROBORTY</td>
+                                <td>1610601071</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                    <br><br>
+                </div>
+            </section>
+            <br><br>
+            <section class="info3" style="background: none; box-shadow: none;">
+                <h2 style="color:#ffc400;font-family: 'Bitter', serif;">MASTER OF CONSTRUCTION ENGINEERING(ME)</h2>
+            </section>
+            <section class="info3">
+             
+                <h2 style="color:#ff6e40;">
+                    FIRST YEAR
+                </h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <th style="color:#004d40;">NAME </th>
+                        <th style="color:#004d40;">EMAIL ID</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ARNAB GHOSH</td>
+                            <td>arnab.ce.ju@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>SHIRSHENDU BHATTACHARYA</td>
+                            <td>shirshendu2014@gmail.com/td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>HIMELSAHA</td>
+                            <td>himelsaha88@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>JAISH CHOUDHURY</td>
+                            <td>jaishchoudhury@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>SATANIK GUHA</td>
+                            <td>satanik.guha@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>SWARNENDU SEKHAR DAS</td>
+                            <td>dswarnendu1589@gmail.com</td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <td>SAYANKO GHOSH</td>
+                            <td>94sayanak@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>AVINAV NANDI</td>
+                            <td>nandyavinav@gmail.com</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                            <tr>
+                                <td>RISHI SARKAR</td>
+                                <td>rishi.sarkar4@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>NAWAB SARIF</td>
+                                <td>nawabsarif@outlook.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUPHAL GHOSH</td>
+                                <td>ghosh.suphal@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>NIRANJAN MUKHERJEE</td>
+                                <td>nirmujeeexam@gmail.com</td>
+                            </tr>
+                        </tbody><tbody>
+                            <tr>
+                                <td>ARPITA MAJUMDAR</td>
+                                <td>arpita.majumdar90@yahoo.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SAPTADIPA BHATTACHARYYA</td>
+                                <td>saptadipa1996@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUMAN BAGCHI</td>
+                                <td>ce.sumanbagchi@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>JAGANNATH DARIPA</td>
+                                <td>daripajagannath@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>LABANI MAITY</td>
+                                <td>maity.labani14@gmail.com</td>
+                            </tr>
+                        </tbody><tbody>
+                            <tr>
+                                <td>VISHAL SINGH</td>
+                                <td>vishalsingh28021995@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SK SAHEB ULLAH/td>
+                                <td>vsksaheb@yahoo.in</td>
+                            </tr>
+                        </tbody><tbody>
+                            <tr>
+                                <td>PRITAM BISWAS</td>
+                                <td>pritam151997@gmail.com</td>
+                            </tr>
+                        </tbody><tbody>
+                            <tr>
+                                <td>AVISEK MALLICK</td>
+                                <td>avishekmallick12@gmail.com</td>
+                            </tr>
+                        </tbody>
+                     </table>
+            </section>
+            <br><br>
+            <section class="info3">
+                <div>
+                    <h2 style="color:#ff6e40;">
+                        SECOND YEAR
+                    </h2>
+                    <table class="table table-bordered">
+                        <thead>
+                            <th style="color:#004d40;">NAME </th>
+                            <th style="color:#004d40;">EMAIL ID</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ARPAN SAHA</td>
+                                <td>asaha29@yahoo.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>CHANDAN SARKAR</td>
+                                <td>sarkarchandan30@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SUTAPA BAIDYA</td>
+                                <td>suatapabaidya@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>MAFIJUL MOLLA</td>
+                                <td>mofijul24@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>GOUTAM SASMAL</td>
+                                <td>sasmalgautam@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SOURAV PAUL</td>
+                                <td>souravpaul188@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>AMINUR RAHAMAN</td>
+                                <td>aminur.adar@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>DEVJIT ACHARJEE</td>
+                                <td>devjitacharjee@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SURJIT BISWAS</td>
+                                <td>surjitbiswaseng@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>SWATI GHOSH</td>
+                                <td>swtghosh02@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>DIPANJAN MANI</td>
+                                <td>dipanjanamani93@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ARITRA BAGCHI</td>
+                                <td>bagchiaritra@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>PROSUN CHOWDHURY</td>
+                                <td>prosunchowdhurykolkata@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>DIPSUNDAR BISWAS</td>
+                                <td>dipsundarce@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>RABI SANKAR ROY</td>
+                                <td>rsssr666@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>KISHOR BISWAS</td>
+                                <td>kishorbiswas1094@gmail.com</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>ANUPAM ALOK</td>
+                                <td>shashianupam@gmail.com</td>
+                            </tr>
+                        </tbody>
+                </div>
+            </section>
+        </section>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
