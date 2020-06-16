@@ -583,7 +583,7 @@
                         <h2 style="color:#ffc400;font-family: 'Bitter', serif;">Reach Us</h2>
                         <hr>
                         <div class="clearfix"></div>
-                    <form name="contact" method="POST" data-netlify="true">
+                    <form name="contact"  data-netlify-recaptcha="true" method="POST" data-netlify="true">
                             <div class="form-group row">
                                 <label for="example-text-input" class="col-2 col-form-label" style="font-family: 'Playfair Display', serif;">Name:</label>
                                 <div class="col-md-10">
@@ -608,10 +608,7 @@
                                     <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your message" required></textarea>
                                 </div>
                                   </div>
-                        <br>
-                                    <div class="text-center" data-netlify-recaptcha="true"></div>
-                            
-                         <br>
+                       <br>
                             <button name="button" type="send us" class="btn btn-primary col-md-4 block"  required><i class="fa fa-paper-plane" aria-hidden="true"></i>
                             Send Us</button>
                   </form>
