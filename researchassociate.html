@@ -97,8 +97,9 @@
     <link rel="icon" href="jad.jpg" type="image/x-icon">
 </head>
 
-<body style="background-image: url(drone.jpeg); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
+<body onload="function()" style="background-image: url(drone.jpeg); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
           <!-- navigation -->
+    <div id="preloader"></div>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"><img src="CN2.png" alt="" style="width: 550px; height: auto;"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -284,6 +285,12 @@
                     }
                 }
             </script>
+     <script>
+        var preloader = document.getElementById('preloader');
+        function myfunction(){
+            preloader.style.display = 'none';
+        }
+    </script>
     <script>
     //Get the button:
 mybutton = document.getElementById("myBtn");
