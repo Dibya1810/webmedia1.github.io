@@ -20,30 +20,105 @@
     <title>welcome to the departmentment of construction enginieering</title>
     <link rel="icon" href="jad.jpg" type="image/x-icon">
     <style>
-        .info3 {
-            margin-top: -60px;
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: black;
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+            /* Add a dark-grey background on hover */
+        }
+    </style>
+    <style>
+        .wrapper {
+            width: 60%;
+            height: auto;
+            margin: auto;
+        }
+
+        .infom {
+            margin-top: -50px;
         }
 
         table.table-bordered {
-            border: 2px solid #0984e3;
+            border: 2px solid #dfe6e9;
             /* margin-top: 20px; */
             padding: 10px;
         }
 
-        table.table-bordered>thead>tr>th {
-            border: 2px solid #0984e3;
+        table.table-bordered>thead>tr {
+            border: 2px solid #dfe6e9;
             padding: 10px;
+            text-transform: capitalize;
+            font-weight: bold;
+            padding: 10px;
+            color: #2d3436;
         }
+
         table.table-bordered>thead>tr>th {
-            border: 2px solid #0984e3;
+            border: 2px solid #dfe6e9;
+            padding: 10px;
+            text-transform: capitalize;
+            font-weight: bold;
+            padding: 10px;
+            color: #2d3436;
+        }
+
+        table.table-bordered>thead>tr>th {
+            border: 2px solid #dfe6e9;
             padding: 10px;
         }
 
         table.table-bordered>tbody>tr>td {
-            border: 2px solid #0984e3;
+            border: 2px solid #dfe6e9;
             text-transform: capitalize;
             font-weight: bold;
             padding: 10px;
+            color: #2d3436;
+        }
+
+        .infom a {
+            justify-content: center;
+            align-items: center;
+            display: block;
+        }
+
+        @media(max-width: 700px) {
+
+            table {
+                font-size: 0.6rem;
+            }
+
+            .wrapper {
+                width: 100%;
+                height: 100%;
+                margin: auto;
+            }
         }
 
         @media(max-width: 500px) {
@@ -52,22 +127,39 @@
                 width: 200;
                 height: 180;
             } */
+            .wrapper {
+                width: 100%;
+                height: 100%;
+                margin: auto;
+            }
+
+            .card {
+                word-wrap: break-word;
+            }
+
             .card-img-top {
                 width: 100;
-                height: 100;
+                height: 200;
             }
 
-            .info3 {
+            .infom {
                 display: block;
+                background: none;
+                box-shadow: none;
             }
 
-            .info3 h2 {
-                font-size: 1.2rem;
+            .infom h2 {
+                font-size: 0.8rem;
                 font-weight: bold;
             }
 
             table {
-                font-size: 0.7rem;
+                font-size: 0.5rem;
+                width: 100%;
+            }
+
+            .ubantu {
+                display: none;
             }
 
             body {
@@ -75,125 +167,142 @@
                 background: none;
 
             }
+
+            .infom a {
+                justify-content: center;
+                align-items: center;
+                display: block;
+            }
+
+            .card img .card-img-top {
+                width: 100;
+                height: 200;
+            }
         }
     </style>
 </head>
 
 <body
     style="background-image: url(drone.jpeg); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="CN2.png" alt="" style="width: 550px; height: auto;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="acadmics.html">ACADEMICS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">RESEARCH</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PEOPLE
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item active" href="people.html">FACULTY<span
+                                class="sr-only">(current)</span></a>
+                        <a class="dropdown-item" href="staff.html">STAFF</a>
+                        <a class="dropdown-item" href="student.html">STUDENT</a>
+                        <a class="dropdown-item" href="researchassociate.html">RESEARCH ASSOCIAIE</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://constructionengineeringju.github.io/">LOGIN</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
 
+                <a href="https://www.facebook.com/constructionju/"> <i class="fa fa-facebook-official fa-2x"
+                        aria-hidden="true" style="color: #192a56; "></i></a>
+
+                <a href="https://www.linkedin.com/company/department-of-construction-engineering-jadavpur-university/"><i
+                        class="fa fa-linkedin-square fa-2x" aria-hidden="true"
+                        style="color: #0984e3; border-radius: 50%;"></i></a>
+                <a href="mailto: alumniwebconstructionju@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"
+                        style="color: #ff4757; "></i></a>
+                <i class="fa fa-quora fa-2x" aria-hidden="true" style="color: #c23616; "></i>
+            </span>
+        </div>
+    </nav>
+
+    <br><br><br>
+    <!-- top-container -->
+
+    <!-- infosection -->
+    <!-- info1 -->
     <div class="wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="CN2.png" alt="" style="width: 550px; height: auto;"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="acadmics.html">ACADEMICS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">RESEARCH</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            PEOPLE
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item active" href="people.html">FACULTY<span
-                                    class="sr-only">(current)</span></a>
-                            <a class="dropdown-item" href="staff.html">STAFF</a>
-                            <a class="dropdown-item" href="student.html">STUDENT</a>
-                            <a class="dropdown-item" href="researchassociate.html">RESEARCH ASSOCIAIE</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://constructionengineeringju.github.io/">LOGIN</a>
-                    </li>
-                </ul>
-                <span class="navbar-text">
-
-                    <a href="https://www.facebook.com/constructionju/"> <i class="fa fa-facebook-official fa-2x"
-                            aria-hidden="true" style="color: #192a56; "></i></a>
-
-                    <a
-                        href="https://www.linkedin.com/company/department-of-construction-engineering-jadavpur-university/"><i
-                            class="fa fa-linkedin-square fa-2x" aria-hidden="true"
-                            style="color: #0984e3; border-radius: 50%;"></i></a>
-                    <a href="mailto: alumniwebconstructionju@gmail.com"><i class="fa fa-envelope fa-2x"
-                            aria-hidden="true" style="color: #ff4757; "></i></a>
-                    <i class="fa fa-quora fa-2x" aria-hidden="true" style="color: #c23616; "></i>
-                </span>
-            </div>
-        </nav>
-
-        <br>
-        <!-- top-container -->
-
-        <!-- infosection -->
-        <!-- info1 -->
-        <br>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"
+                aria-hidden="true"></i></button>
         <section id="staff">
-            <section class="info3">
+            <section class="infom">
                 <!-- <section class="info3"> -->
                 <div class="card" style="width: 100%;">
-                    <img class="card-img-top image1" src="images/total.jpeg" alt="Card image cap" width="600"
-                        height="650" style="z-index: 0;">
+                    <img class="card-img-top image1" src="total2.jpeg" alt="Card image cap" width="400" height="340"
+                        style="z-index: 0;">
                     <img src="ppb1.jpg" alt="db" class="avatar"
                         style="vertical-align: middle;
-                    width: 250px;
-                    height: 250px;
+                    width: 200px;
+                    height: 200px;
                     border-radius: 50%; margin: auto; margin-top: -100px; display: flex; z-index: 100; flex-wrap: wrap;">
                     <div class="card-body" style="background-color: rgba(255,255, 255, 0.5);">
-                        <h2 class="card-title" style="text-transform: uppercase;"><b>DR.Partha Pratim Biswas</b></h2>
-                        <h2 class="card-title" style="text-transform: uppercase;"><b>PROFESSOR</b></h2>
+                        <h2 class="card-title"
+                            style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;"><b>DR.Partha
+                                Pratim Biswas</b></h2>
+                        <h2 class="card-title"
+                            style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;">
+                            <b>PROFESSOR</b></h2>
 
                         <p class="card-text">
-                        <h2>Structural Enginering</h2>
+                        <h2 style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;">Geotechnical &
+                            Geo-environmental Engg</h2>
                         </p>
-
+                        
                         <p class="card-text">
-                        <h2><b>Education:</b></h2>
-                        <table class="table table-bordered" style="border: 1px solid #0984e3;">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Degree</th>
-                                    <th scope="col">Specialization</th>
-                                    <th scope="col">Institute Name</th>
-                                    <th scope="col">Gradiation Year</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">BE</th>
-                                    <td>Civil Engineeeing</td>
-                                    <td>JADAVPUR UNIVERSITY,KOLKATA</td>
-                                    <td>1989</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">ME</th>
-                                    <td>Structural Enginering</td>
-                                    <td>JADAVPUR UNIVERSITY,KOLKATA</td>
-                                    <td>1990</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">PhD</th>
-                                    <td>Structural Engienering</td>
-                                    <td>JADAVPUR UNIVERSITY,KOLKATA</td>
-                                    <td>2000</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </p>
+                            <h2 style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;"><b>Education</b></h2>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Degree</th>
+                                        <th scope="col">University</th>
+                                        <th scope="col">Year</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">ME</th>
+                                        <td>JADAVPUR UNIVERSITY</td>
+                                        <td>1989</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">MCE</th>
+                                        <td>JADAVPUR UNIVERSITY</td>
+                                        <td>1991</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">PhD</th>
+                                        <td>JADAVPUR UNIVERSITY</td>
+                                        <td>2005</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </h2>
+                            </p>
+    
+                        <!-- field of Specialization -->
+
+                        <!-- experience -->
                         <!-- field of Specialization -->
                         <p class="card-text">
-                        <h2><b>Field of Specialization:</b></h2>
+                        <h2 style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;"><b>Field of
+                                Specialization:</b></h2>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -204,78 +313,72 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Structural Engineering</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Structural Health Monitoring</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Earthquake Engineering & Disaster Mitigation</td>
+                                    <td>Highway Engineering and Geotechnical Engineering</td>
                                 </tr>
                             </tbody>
                         </table>
                         </h2>
                         </p>
-                        <!-- experience -->
+
                         <p class="card-text">
-                        <h2><b>publication:</b></h2>
+                        <h2 style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;"><b>Teaching
+                                Experience</b></h2>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
+                                    <th scope="col">Institute</th>
+                                    <th scope="col">Position held</th>
+                                    <th scope="col">Period</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <th scope="row">JADAVPUR UNIVERSITY</th>
+                                    <td>Professor</td>
+                                    <td>2003 to Till date</td>
+
                                 </tr>
                                 <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
+                                    <th scope="row">JADAVPUR UNIVERSITY</th>
+                                    <td>Reader</td>
+                                    <td>1995 to 2003</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
+                                    <th scope="row">JADAVPUR UNIVERSITY</th>
+                                    <td>Lecturer</td>
+                                    <td>1993 to 1995</td>
                                 </tr>
                             </tbody>
                         </table>
+                        </h2>
                         </p>
-
-
-
-                        <!-- publication -->
-
 
 
                         <!-- Externallinks -->
                         <p class="card-text">
-                        <h2><b>External Links</b> </h2>
+                        <h2 style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;"><b>Conference
+                                Publication</b></h2>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th scope="col">Serial Number</th>
-                                    <th scope="col">Links</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Conference</th>
+                                    <th scope="col" class="ubantu">Year</th>
+                                    <th scope="col">Role</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>http://source.unsplash.com/random/1800*1800</td>
+                                    <th scope="row">An Innovative Solution for Fly ash based SCC Mixture Proportioning Current Approach</th>
+                                    <td>Prague Conference on 12th International Symposium on Concrete Roads</td>
+                                    <td class="ubantu">2014</td>
+                                    <td>Co-Author</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">2</th>
-                                    <td>http://source.unsplash.com/random/1800*1800</td>
+                                    <th scope="row">A Rational Approach for Estimation of Ratio of Water to Cementitious Materials for Fly ash Based Concrete</th>
+                                    <td>SCC 2013, Fifth North American Conference on the Design & Use of Self-Consolidating Concrete, May 12-15</td>
+                                    <td class="ubantu">2013</td>
+                                    <td>Co-Author</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -284,9 +387,122 @@
 
 
 
+                        <p class="card-text">
+                        <h2 style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;"><b>Journal
+                                Publication</b></h2>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Journal</th>
+                                    <th scope="col" class="ubantu">Year</th>
+                                    <th scope="col">Role</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Relationship of Strength, Cementitious Materials and Water for Proportioning of Portland Slag Cement Based Concrete</th>
+                                    <td>Indian Concrete Journal</td>
+                                    <td class="ubantu">2013</td>
+                                    <td>Co-Author</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Construction Safety Management Climate in Kolkata</th>
+                                    <td>Journal of International Business Research</td>
+                                    <td class="ubantu">2013</td>
+                                    <td>Co-Author</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </p>
+
 
                         <p class="card-text">
-                        <h2>
+                        <h2 style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;">
+                            Awards
+                        </h2>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Award name</th>
+                                    <th scope="col">Year</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Errasmus Mundis Europian Union visiting Fellowship to visit University of Nice Anti-sophia Polis ,France)</th>
+                                    <td>2009</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Outstanding Young Persons of Kolkata.</th>
+                                    <td>2001</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Young Scientist FellowshipW</th>
+                                    <td>1995</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Research Associate by Council for Scientific and Industrial Research</th>
+                                    <td>1992</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Senior Research Fellowship of Government of West Bengal in the Department of Civil Engineering</th>
+                                    <td>1991</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </p>
+
+
+                        <p class="card-text">
+                            <h2 style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;"><b>InviteLectures:</b></h2>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Organised By</th>
+                                        <th scope="col" class="ubantu">Year</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Urban Infrastructure Development: key issues and challenges</th>
+                                        <td>Unnayan Bhavan KMDA</td>
+                                        <td class="ubantu">2014</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Role of Engineers in Sustainable Development</th>
+                                        <td>IET</td>
+                                        <td class="ubantu">2013</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Mentor speech for Industry Institute Interaction Activity under TEQIP Funded Institutions</th>
+                                        <td>MHRD-BESU Workshop</td>
+                                        <td class="ubantu">2013</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Challenges of Indian Engineers</th>
+                                        <td>Control Desk Solution for Management Executives</td>
+                                        <td class="ubantu">2013</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Technology Adaptation and Sustainable Development</th>
+                                        <td>Academic Staff College -Jadavpur University</td>
+                                        <td class="ubantu">2013</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><a href="http://www.jaduniv.edu.in/viewAllDataPopUpProfile.php?uid=269&pageName=InviteLectures">see more</a></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </p>
+
+
+                        
+
+
+                        <p class="card-text">
+                        <h2 style="text-transform: uppercase;color:#ffc400;font-family: 'Bitter', serif;">
                             professional membership
                         </h2>
                         <table class="table table-bordered">
@@ -299,38 +515,65 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">1</th>
-                                    <td>Institute of Concrete science</td>
+                                    <td>Institution of Engineers (India)</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
-                                    <td>Jdavpur university department of construction engineering</td>
+                                    <td>The Institution of Engineering and Technology (IET)</td>
                                 </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td> Indian Concrete Institute</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Forum of Scientist Engineers & Technologists</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Indian Roads Congress
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Charted Engineer</td>
+                                </tr>
+
                             </tbody>
                         </table>
                         </p>
 
-                        <a href="#" class="btn btn-primary">Download CV
 
-                        </a>
+
+                       
+
+
+
+                       
+
+
+                       
+
                     </div>
                 </div>
             </section>
         </section>
-        <!-- footer -->
-        <footer id="sticky-footer" class="py-4 bg-dark text-white-50"
-            style="margin-top:5%;position: relative; width:100%;z-index: 1;">
-            <div class="container text-center">
-                <p style="font-size:1.85rem"><a href="" style="text-decoration: none; text-emphasis: none;">Brought
-                        to
-                        you
-                        by SM&PR Group</a>
-                </p>
-                <p style="font-size:1.15rem"><em></em> Managed by Web Development Team, SM&PR Group</p>
-                
-            </div>
-        </footer>
-
     </div>
+    <!-- footer -->
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50"
+        style="margin-top:5%;position: relative; width:100%;z-index: 1;">
+        <div class="container text-center">
+            <p style="font-size:1.85rem"><a href="" style="text-decoration: none; text-emphasis: none;">Brought
+                    to
+                    you
+                    by SM&PR Group</a>
+            </p>
+            <p style="font-size:1.15rem"><em></em> Managed by Web Development Team, SM&PR Group</p>
+
+        </div>
+    </footer>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
@@ -360,6 +603,27 @@
                     }
                 }
             }
+        }
+    </script>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
 </body>
