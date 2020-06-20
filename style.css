@@ -429,7 +429,7 @@ footer{
 }
 @media(max-width: 500px){
     body{
-        margin-top: 120px;
+        margin-top: 100px;
     }
     .navbar{
         background: #dddddd;
