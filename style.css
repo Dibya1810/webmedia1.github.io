@@ -9,12 +9,13 @@ html{
 }
 html{
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oldenburg', cursive;
     color: var(--dark);
 }
 body{
     background:  #2d3436;
     line-height: 1.4;
+    font-family: 'Oldenburg', cursive !important;
 }
 #preloader{
     position: fixed;
@@ -83,6 +84,15 @@ text-decoration: none;
 .nav-bar li.active a{
     background: var(--dark);
     color: var(--primary);
+}
+
+.navbar li.active a{
+    color: var(--primary);
+}
+.navbar li a{
+    font-family: 'Oldenburg', cursive !important;
+    font-weight: bold !important;
+    font-size: 1.5rem !important;
 }
 #top-container{
     display: grid;
@@ -153,7 +163,6 @@ text-decoration: none;
     color: var(--dark);
     /* mix-blend-mode: overlay; */
     text-shadow: 0 5px 10px rgba(0,0,0,1);
-    font-family: 'Baloo Bhai 2', cursive;
 }
 .showcase p{
     font-size: 2.3rem;
@@ -428,6 +437,10 @@ footer{
     }
 }
 @media(max-width: 500px){
+    .navbar li a{
+        
+        font-size: 1.0rem !important;
+    }
     body{
         margin-top: 100px;
     }
