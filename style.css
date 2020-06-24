@@ -112,7 +112,7 @@ text-decoration: none;
 }
 .showcase{
     grid-area: 'showcase showcase ';
-    min-height: 400px;
+    min-height: 560px;
     background: url(pic4.jpg);
     background-size: 100% 100%;
     background-position: center;
@@ -129,15 +129,15 @@ text-decoration: none;
 }
 @keyframes slider{
     0%{
-        background: url(images/ju1.jpeg);
+        background: url(images/jusl.jpeg);
         background-size: 100% 100%;
     }
     20%{
-        background: url(images/dp2.jpg);
+        background: url(images/dp5.jpg);
         background-size: 100% 100%;
     }
     40%{
-        background: url(images/seminar1.jpg);
+        background: url(images/reuni.jpg);
         background-size: 100% 100%;
     }
     60%{
@@ -145,11 +145,11 @@ text-decoration: none;
         background-size: 100% 100%;
     }
     80%{
-        background: url(images/bridgethegap1.jpg);
+        background: url(images/convocation.jpg);
         background-size: 100% 100%;
     }
     100%{
-        background: url(images/ju1.jpeg);
+        background: url(images/jusl.jpeg);
         background-size: 100% 100%;
     }
 
@@ -331,6 +331,7 @@ footer{
         padding: 1.3rem;
     }
     .showcase{
+        min-height: 400px;
         text-align: center;
         justify-content: center;
         background-position: center;
@@ -466,6 +467,7 @@ footer{
         padding: 1.3rem;
     }
     .showcase{
+        min-height: 400px;
         text-align: center;
         justify-content: center;
         background-position: center;
