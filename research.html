@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.js">
+    <link rel="stylesheet" href="particles.json">
+    <link rel="stylesheet" href="particle.js">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Monoton&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <title>welcome to the departmentment of construction enginieering</title>
+    <link rel="icon" href="jad.jpg" type="image/x-icon">
+    <style>
+        .wrapper {
+            width: 80%;
+            height: auto;
+            margin: auto;
+        }
+
+        table.table-bordered {
+            border: 2px solid #3e2723;
+            /* margin-top: 20px; */
+        }
+
+        table.table-bordered>thead>tr>th {
+            border: 2px solid #3e2723;
+        }
+
+        table.table-bordered>tbody>tr>td {
+            border: 2px solid #3e2723;
+            text-transform: capitalize;
+            font-weight: bold;
+            color: #3e2723;
+        }
+
+        @media(max-width:700px) {
+            .wrapper {
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+
+            .info3 {
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+
+            .showcase {
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+        }
+
+        @media(max-width: 700px) {
+            .ubantu {
+                display: none;
+            }
+
+            .wrapper {
+                width: 100%;
+            }
+
+            .info3 {
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+
+            .showcase {
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+        }
+
+        @media(max-width:500px) {
+            .wrapper {
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+        }
+
+        @media(max-width: 500px) {
+
+            /* .info3 {
+                background: none;
+                box-shadow: none;
+            } */
+            .ubantu {
+                display: none;
+            }
+
+            .info3 h2 {
+                font-size: 1.8rem;
+            }
+
+            .info3 {
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+
+            .wrapper {
+                width: 100%;
+                height: auto;
+                margin: auto;
+            }
+
+            table.table-bordered>tbody>tr>td {
+                font-size: 0.5rem;
+            }
+        }
+    </style>
+    <style>
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: black;
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+            /* Add a dark-grey background on hover */
+        }
+    </style>
+</head>
+
+<body onload="myfunction()"
+    style="background-image: url(bgrev.png); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
+
+    <div id="preloader"></div>
+    <!-- navigation -->
+    <!-- <div class="nav-bar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="academics.html">ACADEMICS</a></li>
+                    <li><a href="#">RESEARCH</a></li>
+                    <li class="active">
+                        <div class="dropdown dropdown">
+                            <a  onclick="myFunction()" class="btn btn-secondary dropdown-toggle"   id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: #dddddd; color: #111111;">PEOPLE</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="faculty.html">FACULTY</a>
+                              <a class="dropdown-item" href="#staff">STAFF</a>
+                              <a class="dropdown-item" href="student.html">STUDENT</a>
+                              <a class="dropdown-item" href="researchassociate.html">RESEARCH ASSOCIATE</a>
+                            </div>
+                          </div>
+                </li>
+                    <li><a href="https://constructionengineeringju.github.io/">LOGIN</a></li>
+                </ul>
+            </div> -->
+
+
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="CN2.png" alt="" style="width: 550px; height: auto;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acadmics.html">ACADEMICS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#staff">RESEARCH<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              PEOPLE
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="people.html">FACULTY</a>
+                              <a class="dropdown-item" href="staff.html">STAFF</a>
+                              <a class="dropdown-item" href="student.html">STUDENT</a>
+                              <a class="dropdown-item" href="researchassociate.html">RESEARCH ASSOCIAIE</a>
+                            </div>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://constructionengineeringju.github.io/">LOGIN</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        
+                        <a href="https://www.facebook.com/constructionju/"> <i class="fa fa-facebook-official fa-2x"
+                            aria-hidden="true" style="color: #192a56; "></i></a>
+                            
+                        <a href="https://www.linkedin.com/company/department-of-construction-engineering-jadavpur-university/"><i
+                            class="fa fa-linkedin-square fa-2x" aria-hidden="true"
+                            style="color: #0984e3; border-radius: 50%;"></i></a>
+                        <a href="mailto: alumniwebconstructionju@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"
+                                style="color: #ff4757; "></i></a>
+                        <i class="fa fa-quora fa-2x" aria-hidden="true" style="color: #c23616; "></i>
+                    </span>
+                </div>
+            </nav>
+
+    <!-- top-container -->
+    <div class="wrapper">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"
+                aria-hidden="true"></i></button>
+                <section id="top-container">
+                    <header class="showcase">
+                         <h1 style="font-family: 'Bangers', cursive;
+                    font-family: 'Monoton', cursive; color: #ffebee;">
+                        <div style="color: #ffd180;">Department of</div><span style="color: #e65100;"> Construction</span>
+                        <div style="color: #aeea00;">Engineering</div><div style="color: #18ffff ;">welcomes you all</div>
+                    </h1>
+                    <br>
+                    </header>
+    
+                </section>
+        <!-- infosection -->
+        <!-- info1 -->
+        <br>
+        <section id="staff">
+            <section class="info3">
+                <div>
+                    <h2
+                        style="text-transform: uppercase;color:#e53935;font-family: 'Oldenburg', cursive; font-weight: bold;">
+                        RESEARCH
+                    </h2>
+                    <br>
+                    <P style="color:#3e2723;font-family: 'Oldenburg', cursive; font-weight: bold;">
+                        Jadavpur University was established in 1956 and the Construction Engineering
+                        Department is part of the institute from the year 1989. The Department has grown tremendously
+                        over the years and is now recognized as one of the major engineering departments in the country.
+                        The department has developed strong links with the building and construction industry and
+                        academic and research , both with in and outside the country. Besides high quality teaching and
+                        instruction at both UG and PG levels, the Department is actively involved in basic and applied
+                        research and consultancy and provides high quality technical advisory support through various R
+                        D projects and consultancy to various organizations. The Department of Construction Engineering
+                        with
+                        its multifaceted faculty continues to maintain and cultivate its strong links with the
+                        infrastructural industry and academic and research institutions both within and outside the
+                        country.
+                    </P>
+                </div>
+            </section>
+            <br><br>
+            <section class="info3">
+                <div>
+                    <h2 style="color:#e53935;font-family: 'Oldenburg', cursive; font-weight: bold;">
+                        Research Activities
+                    </h2>
+                    <p style="color:#3e2723;font-family: 'Oldenburg', cursive; font-weight: bold;">
+                        The Department has excellent facilities for carrying out teaching, research and consultancy
+                        activities in various disciplines of Construction Engineering. Some important facilities in the
+                        Department are:</p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <th style="color:#ff6d00; font-family: 'Oldenburg', cursive; font-weight: bold;">NO.</th>
+                            <th style="color:#ff6d00; font-family: 'Oldenburg', cursive; font-weight: bold;">Research
+                                Activities
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Damage Assessment and Health Monitoring of Structures</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>High Performance Concrete</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>3</td>
+                                <td>Geo-environmental Engineering</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>4</td>
+                                <td>Condition assessment of Flexible pavement</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>5</td>
+                                <td>Repair and Retrofitting of Structures</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <br><br>
+            <section class="info3">
+                <div>
+                    <h2 style="color:#e53935;font-family: 'Oldenburg', cursive; font-weight: bold;">
+                        Thrust Area
+                    </h2>
+                    <table class="table table-bordered">
+                        <thead>
+                            <th style="color:#ff6d00; font-family: 'Oldenburg', cursive; font-weight: bold;">NO</th>
+                            <th style="color:#ff6d00; font-family: 'Oldenburg', cursive; font-weight: bold;">Thrusht
+                                Area
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Construction Management</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>Structural Repair and Retrofitting Engineering</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <br><br>
+            <section class="info3">
+                <div>
+                    <h2 style="color:#e53935;font-family: 'Oldenburg', cursive; font-weight: bold;">
+                        Laboratories Equipment
+                    </h2>
+                    <table class="table table-bordered">
+                        <thead>
+                            <th style="color:#ff6d00; font-family: 'Oldenburg', cursive; font-weight: bold;">
+                                Laboratories</th>
+                            <th style="color:#ff6d00; font-family: 'Oldenburg', cursive; font-weight: bold;">Equipment
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Structural Laboratory</td>
+                                <td>Universal Testing Machine of 60 T Capasity,
+                                    3000 KN strain controlled Compression Testing Machine,
+                                    Load frame of 50 T capacity</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Soil Mechanics Laboratory</td>
+                                <td>Triaxial testing M/c of 5t capacity,
+                                    Triaxial testing M/c 2.5t capacity,
+                                    DMT / SDMT Penetrometer</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Concrete Laboratory</td>
+                                <td>Concrete Core Cutter,
+                                    Half Cell Potentiometer Tester for corrosion</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Condition Assessment & Structural Health Monitoring</td>
+                                <td>Sonic-Echo Pile Integrity Testing Eqquipment.
+                                    Unidirectional Shake Table
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Materials Laboratory</td>
+                                <td>Flat Jack System</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Highway Laboratory</td>
+                                <td>Falling Weight Deflectometer
+                                    Skid Resistance Equipment
+                                    Bump Integrator</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Repair Materials & Retrofitting Laboratory</td>
+                                <td>Data Acquisition System for Vibration Analysis
+                                    Ultrasonic Pulse Velocity test on steel and concrete</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Computer Aided Structural Analysis</td>
+                                <td>Software AutoCAD, Staad Pro.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <br><br>
+            <section class="info3">
+                <div>
+                    <h2 style="color:#e53935;font-family: 'Oldenburg', cursive; font-weight: bold;">
+                        External Links
+                    </h2>
+                    <table class="table table-bordered">
+                        <thead>
+                            <th style="color:#ff6d00; font-family: 'Oldenburg', cursive; font-weight: bold;">NO</th>
+                            <th style="color:#ff6d00; font-family: 'Oldenburg', cursive; font-weight: bold;">Links </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><a
+                                        href="https://www.researchgate.net/institution/Jadavpur_University/department/Department_of_Construction_Engineering/members">researchgate.net/</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+        <!-- footer -->
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50"
+            style="margin-top:5%;position: relative; width:100%;z-index: 1;">
+            <div class="container text-center">
+                <p style="font-size:1.85rem"><a href="" style="text-decoration: none; text-emphasis: none;">Brought
+                        to
+                        you
+                        by SM&PR Group</a>
+                </p>
+                <p style="font-size:1.15rem"><em></em> Managed by Web Development Team, SM&PR Group</p>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script>
+        var preloader = document.getElementById('preloader');
+        function myfunction() {
+            preloader.style.display = 'none';
+        }
+    </script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+
+</html>
