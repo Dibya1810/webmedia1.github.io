@@ -7,6 +7,41 @@
 
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <style>
+	.carousel-item {
+        width: 100%;
+        color: black;
+      }
+      .carousel-inner{
+        width:100%;
+        max-height: 200px !important;
+        color: black;
+      }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+
+        bottom: 0%;
+        outline: black;
+        background-size: 100%, 100%;
+        border-radius: 50%;
+        border: 1px solid black;
+        background-image: none;
+      }
+
+      .carousel-control-next-icon:after
+      {
+       
+        font-size: 55px;
+        color: black;
+      }
+
+      .carousel-control-prev-icon:after {
+        
+        font-size: 55px;
+        color: black;
+      }
+</style>
+<style>
 	html{
 		scroll-behavior: smooth;
 	}
@@ -134,14 +169,81 @@
 
 
 	<!-- Feature 2 -->
-	<article class="container box style1 left">
-		<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-		<div class="inner">
-			<header>
-				<h2>APPRECIATIONS RECEIVED<br />
-				</h2>
-			</header>
-		</div>
+	<article class="container box style2">
+			<!--Carousel Wrapper-->
+			<div class="inner">
+				<header>
+					<h2>APPRECIATIONS RECEIVED<br />
+					</h2>
+				</header>
+	</article>
+	<article class="container box style2">
+				<header>
+				<div class = "col sm-2">
+
+                    <p style="text-align: center;margin-top: 20px;font-weight: bold; ">APPRECIATION RECIEVED TILL NOW :</p>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style ="margin-bottom: 20px;">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                           <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">Congratulations to all of you for the splendid initiative! </p>
+                           <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">- Parijat Mondal ,B.E. ,1993</p>
+                          </div>
+                          <div class="carousel-item">
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">It's a great effort indeed. </p>
+                           <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">- Sanjib Das ,B.E. , 1993</p>
+                          </div>
+                          <div class="carousel-item">
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">It's very good initiative. </p>
+                           <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">- Kaushik Das ,B.E. , 1998</p>
+                          </div>
+                          <div class="carousel-item">
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">Well wishing for your such effort </p>
+                           <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">- Sanjay Sarkar ,B.E. , 2000</p>
+                          </div>
+                          <div class="carousel-item">
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">Very good initiative . Keep it up. </p>
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">- Ashis Jana ,B.E. , 2001</p>
+                          </div>
+                          <div class="carousel-item">
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">Great initiative.Keep it up. </p>
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">- Sujan Shankar Ghosh ,B.E. , 2005</p>
+                          </div>
+                          <div class="carousel-item">
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">BEST OF LUCK ... </p>
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">- SOMEN MAHATO ,B.E. , 2007</p>
+                          </div>
+                          <div class="carousel-item">
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">Very good initiative  </p>
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">- Sayed Parvez Alam ,B.E. , 2010</p>
+                          </div>
+                          <div class="carousel-item">
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">Good initiative.Keep it up </p>
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">- Shivang Shekhar ,B.E. , 2010</p>
+                          </div>
+                          <div class="carousel-item">
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">Great initiative, all the best. </p>
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">- Sumon Chatterjee ,B.E. , 2012</p>
+                          </div>
+                          <div class="carousel-item">
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">The above is a very good initiative and a step in the correct direction. </p>
+                            <p style="text-align: center;font-family: 'Source Sans Pro', sans-serif;">- Pratyush ,Chakraborty ,B.E. , 2014</p>
+                          </div>
+                        </div>
+                        <div class="icon">
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                        </div>
+                      </div>
+			</div>
+		</header>
+  <!--/.Carousel Wrapper-->
+		
 	</article>
 	<article class="container box style2 right">
 		<header>
