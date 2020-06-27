@@ -96,6 +96,32 @@
     
         }
 </style>
+<style>
+	.slider {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  overflow-x: auto;
+}
+.slide {
+  width: 600px;
+  flex-shrink: 0;
+  height: 100%;
+}
+.slides > div:target {
+  transform: scale(0.8);
+}
+
+@media(max-width: 500px){
+	.slider {
+  width: 200px;
+  height: 200px;
+}
+.slide{
+	width: 200px;
+}
+}
+</style>
 <html>
 
 <head>
@@ -167,7 +193,43 @@
 		</header>
 	</article>
 
-
+	<article class="container box style2">
+			<!--Carousel Wrapper-->
+			<div class="inner">
+				<header>
+					<h2>APPRECIATIONS RECEIVED<br />
+					</h2>
+				</header>
+	</article>
+	<article class="container box style2">
+				<header>
+					<div class="slider">
+						<div class="slide active" id="slide-1">
+							<img src="https://scontent.fccu3-1.fna.fbcdn.net/v/t1.0-9/44366668_557017294754509_3073259046879363072_n.jpg?_nc_cat=100&_nc_sid=174925&_nc_ohc=0gWL3b1GSnQAX9OhqkW&_nc_ht=scontent.fccu3-1.fna&oh=6aa6e4e4459f0aeecccb39a7ca2997e1&oe=5F1DD205" alt="" style="border-radius: 50%;width: 100px; height: auto;">
+							<h5>DIBYA JYOTI BASU</h5>
+							<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ad, atque earum exercitationem provident, impedit dicta nostrum, totam dolores aut neque tenetur! Sint sunt laborum at perspiciatis sed temporibus nesciunt?</P>
+						</div>
+						<div class="slide" id="slide-2">
+							<h5>DIBYA JYOTI BASU</h5>
+							<P>"BEAUTIFUL INITIATIVE"</P>
+						</div>
+						<div class="slide" id="slide-3">
+							<h5>DIBYA JYOTI BASU</h5>
+							<P>"BEAUTIFUL INITIATIVE"</P>
+						</div>
+						<div class="slide" id="slide-4">
+							<h5>DIBYA JYOTI BASU</h5>
+							<P>"BEAUTIFUL INITIATIVE"</P>
+						</div>
+						<div class="slide" id="slide-5">
+							<h5>DIBYA JYOTI BASU</h5>
+							<P>"BEAUTIFUL INITIATIVE"</P>
+						</div>
+					  </div>
+		</header>
+  <!--/.Carousel Wrapper-->
+		
+	</article>
 
 	<article class="container box style2 right">
 		<header>
